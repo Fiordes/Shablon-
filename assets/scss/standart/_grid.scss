@@ -1,0 +1,33 @@
+body {
+    position: relative;
+
+
+    &.locked {
+        overflow: hidden;
+    }
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1318px;
+    padding: 32px;
+
+    @include media(tablet) {}
+
+    @include media(desktop) {
+        padding: 64px 32px;
+    }
+
+    @include media(wide) {
+        padding: 64px 0;
+    }
+}
+
+.mobile-hide {
+    display: none;
+
+    @include media(desktop) {
+        display: block;
+    }
+}
