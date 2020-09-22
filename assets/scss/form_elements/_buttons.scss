@@ -63,3 +63,63 @@
     color: #5B4396;
     font-weight: bold;
 }
+
+.buy {
+    border: 1.5px solid #39D0AE;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.018em;
+    color: #39D0AE;
+    padding: 6px 12px 6px 26px;
+
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url('../../assets/img/buttons/shopping-cart-green.svg');
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+    }
+}
+
+.form-btn {
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.75px;
+    text-transform: capitalize;
+    border: none;
+}
+
+.reset {
+    background: #F0F0F0;
+
+    color: #CACACA;
+
+}
+
+.show-result {
+    background: #FF3F5C;
+    color: #ffffff;
+
+
+    span {
+        display: contents;
+    }
+}

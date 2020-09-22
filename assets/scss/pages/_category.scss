@@ -1,0 +1,236 @@
+.categories {
+    .large {
+
+        @include media(desktop) {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-column-gap: 32px;
+        }
+
+    }
+
+    &__sidebar {
+        &-wrapper {
+
+            @include media(desktop) {
+                padding: 0 0 0 64px;
+
+            }
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 150%;
+            border: 1.5px solid #282828;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 12px;
+            width: 100%;
+            margin-bottom: 30px;
+
+            img {
+                margin-right: 35px;
+            }
+        }
+
+        h3 {
+            font-size: 20px;
+            line-height: 150%;
+            margin-bottom: 14px;
+            margin-right: 22px;
+        }
+    }
+
+    &__total {
+        position: relative;
+        padding-left: 48px;
+
+        a {
+            color: $colour-text-main;
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.0275em;
+
+            span {
+                display: block;
+                font-size: 14px;
+                line-height: 143%;
+                letter-spacing: 0.018em;
+                color: #787885;
+            }
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../../assets/img/category/chevron-right.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+    }
+
+    &__menu {
+
+        &-main {
+            // padding-left: 10px;
+            height: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s;
+            padding-left: 48px;
+
+            a {
+                color: $colour-text-main;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.0275em;
+
+                span {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 143%;
+                    letter-spacing: 0.018em;
+                    color: #787885;
+                }
+            }
+
+
+            &.open {
+                height: 100%;
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            margin-bottom: 65px;
+
+        }
+
+        &-item {
+
+            margin-bottom: 10px;
+
+
+        }
+
+        &-dropdown {
+            padding-left: 10px;
+            height: 0;
+            opacity: 0;
+            transition: all 0.3s;
+
+
+            &.open {
+                height: 100%;
+                opacity: 1;
+            }
+        }
+    }
+
+    .have__dropdown {
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url('../../assets/img/category/chevron_right-pink.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: -35px;
+
+        }
+
+        &.rotate {
+            &::before {
+                transform: rotate(90deg);
+            }
+        }
+
+    }
+
+    &__filter {
+        background: #FBFBFB;
+        border-radius: 8px;
+        padding: 28px 32px;
+
+        .input-field {
+            width: 100%;
+
+        }
+
+        select {
+            width: 100%;
+            background: transparent;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            border: none;
+            padding: 5px 0;
+            border-bottom: 1px solid #F0F0F0;
+            margin-bottom: 22px;
+        }
+    }
+
+    // ARTICLE
+
+    &__title {
+        font-size: 28px;
+        line-height: 150%;
+        margin-bottom: 36px;
+    }
+
+    &__slider {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        &-item {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.02), 0px 4px 48px rgba(51, 51, 51, 0.06);
+            border-radius: 8px;
+
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            img {
+                margin-bottom: 11px;
+            }
+
+            h5 {
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: -0.24px;
+                margin-bottom: 4px;
+            }
+
+            a {
+                ont-size: 12px;
+                line-height: 20px;
+                display: block;
+                letter-spacing: -0.24px;
+                color: rgba(17, 17, 17, 0.48);
+            }
+        }
+    }
+}

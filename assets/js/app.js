@@ -15,6 +15,69 @@ const mobileHead = document.querySelector(".header__mobile-head");
 const subMenusLinks = document.querySelectorAll(
   ".header__mobile-submenu .header__mobile-link"
 );
+
+// Dark theme
+const darkThemeTrigger = document.querySelector(".header__mobile-theme");
+const darkThemeTriggerLink = document.querySelector(".header__mobile-theme a");
+
+function changeTheme() {
+  document.body.classList.toggle('dark');
+  if (document.body.classList.contains('dark')) {
+    darkThemeTriggerLink.innerHTML = ` <a href="#">
+                                          <img src="./assets/img/mobile-nav/night.svg" alt="sun" />
+                                          Ночь
+                                        </a>`
+
+  } else {
+    darkThemeTriggerLink.innerHTML = ` <a href="#">
+                                          <img src="./assets/img/mobile-nav/sun.svg" alt="sun" />
+                                          День
+                                        </a>`
+
+  }
+}
+
+darkThemeTrigger.addEventListener('click', (e) => {
+  e.preventDefault()
+  changeTheme();
+
+})
+
+
+
+// FILTER INPUTS
+
+const filterInputs = document.querySelectorAll('.filter__box input');
+
+filterInputs.forEach(input => {
+  let label = input.parentNode;
+  input.addEventListener('click', function () {
+    label.classList.toggle('disabled')
+  })
+})
+
+// FILTER ACCORDEON
+
+const accordeonTrigger = document.querySelectorAll('.acordeon-trigger');
+const accordeonBody = document.querySelectorAll('.acordeon-body');
+
+
+accordeonTrigger.forEach(trigger => {
+  let nextBlock = trigger.nextElementSibling;
+  trigger.classList.remove('sm');
+  // accordeonBody.forEach(body => body.classList.remove('open'))
+
+
+  trigger.addEventListener('click', function () {
+    accordeonBody.forEach(body => body.classList.remove('open'))
+
+    trigger.classList.toggle('sm');
+    nextBlock.classList.toggle('open');
+  })
+})
+
+
+
 const backButtons = document.querySelectorAll(".back");
 
 function lockBody() {
@@ -195,3 +258,43 @@ backButtons.forEach((btn) => {
     // console.log(prevVisibleMenu);
   });
 });
+
+
+
+const categoryMenu = document.querySelectorAll('.have__dropdown');
+const categoryDropdown = document.querySelectorAll('.categories__menu-dropdown');
+const categoryTotalItem = document.querySelector('.categories__total');
+
+
+if (categoryTotalItem) {
+  categoryTotalItem.addEventListener('click', () => {
+    categoryTotalItem.nextElementSibling.classList.toggle('open');
+  })
+
+}
+categoryMenu.forEach((item) => {
+  item.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    categoryDropdown.forEach((dropdown) => {
+      dropdown.classList.remove('open')
+    })
+
+
+    // if (item.classList.contains('rotate')) {
+    //   item.classList.remove('rotate')
+    // } else {
+    //   item.classList.add('rotate')
+
+    // }
+
+
+    let closeUl = item.lastElementChild
+
+    if (closeUl.classList.contains('categories__menu-dropdown')) {
+      closeUl.classList.toggle('open')
+
+    }
+
+  })
+})

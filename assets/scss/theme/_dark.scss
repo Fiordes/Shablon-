@@ -1,0 +1,111 @@
+body.dark {
+    transition: all 0.5s ease-in-out;
+    background: #252525;
+
+    .burger__menu,
+    .burger__search {
+
+        &:after,
+        &:before {
+            background: #cacaca;
+        }
+
+        span {
+            background: #cacaca;
+        }
+    }
+
+
+    .header__mobile {
+
+        &-head {
+            background: #333;
+        }
+
+        &-body,
+        &-submenu {
+            background: #252525;
+            color: #cacaca;
+
+        }
+
+        &-item a {
+            color: #cacaca;
+        }
+
+        &-btns {
+            background: #2F2E2E;
+        }
+
+        &-theme {
+
+            p,
+            a {
+                color: #cacaca;
+
+            }
+
+        }
+    }
+
+
+
+    .search__box {
+        background: #333;
+
+        input {
+            background: transparent;
+            color: #cacaca;
+        }
+
+        &-more {
+            background: #646464;
+            color: #cacaca;
+        }
+    }
+
+    .search__result {
+        background: #252525;
+
+        h6,
+        p {
+            color: #fff;
+        }
+    }
+
+
+    .cart__box {
+        background: #333;
+        color: #cacaca;
+
+        input {
+            background: transparent;
+            color: #cacaca;
+        }
+
+        button {
+            background: #5F5F5F;
+            color: #CACACA;
+        }
+
+        h6,
+        p {
+            color: #fff;
+        }
+    }
+
+
+    .intro {
+        &:before {
+            background: #252525;
+        }
+
+        color: #cacaca;
+
+        a {
+            color: #cacaca
+        }
+    }
+
+
+}
