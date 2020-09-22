@@ -1,6 +1,8 @@
 const burgerMenu = document.querySelector(".burger__menu");
 const toggleBox = document.querySelector(".toggle__box");
 const headerBody = document.querySelector(".header__mobile-body");
+
+
 const searchButton = document.querySelector(".toggle__box-search");
 const searchBox = document.querySelector(".search__box");
 const searchResult = document.querySelector(".search__result");
@@ -9,12 +11,21 @@ const burgerSearch = document.querySelector(".burger__search");
 const cartButton = document.querySelector(".toggle__box-cart");
 const cartBox = document.querySelector(".cart__box");
 
+
+const brandButton = document.querySelector(".brands__trigger");
+const brandBox = document.querySelector(".brands__box");
+
+
+
 const subTriggers = document.querySelectorAll(".have__sub");
 const subMenus = document.querySelectorAll(".header__mobile-submenu");
 const mobileHead = document.querySelector(".header__mobile-head");
 const subMenusLinks = document.querySelectorAll(
   ".header__mobile-submenu .header__mobile-link"
 );
+
+
+const headSearchInput = document.querySelector('#search');
 
 // Dark theme
 const darkThemeTrigger = document.querySelector(".header__mobile-theme");
@@ -137,11 +148,26 @@ cartBoxTrigger.fromTo(
     y: "100%",
     display: "none",
   }, {
-    y: "12%",
+    y: "15%",
     display: "block",
   }
 );
 cartBoxTrigger.pause();
+
+// Brands box
+let brandsBoxTrigger = new gsap.timeline();
+brandsBoxTrigger.fromTo(
+  brandBox,
+  0.2, {
+    y: "80%",
+    display: "none",
+  }, {
+    y: "15%",
+    display: "block",
+  }
+);
+brandsBoxTrigger.pause();
+
 
 // Mobile header Move
 
@@ -156,6 +182,9 @@ mobileHeaderMove.fromTo(
   }
 );
 mobileHeaderMove.pause();
+
+
+
 
 burgerMenu.addEventListener("click", function () {
   burgerMenu.classList.toggle("active");
@@ -194,6 +223,8 @@ burgerSearch.addEventListener("click", function () {
   searchResultTrigger.reverse();
   toggleBox.classList.toggle("switch");
   burgerSearch.classList.toggle("active");
+  brandsBoxTrigger.reverse()
+
 });
 
 cartButton.addEventListener("click", function (el) {
@@ -208,6 +239,32 @@ cartButton.addEventListener("click", function (el) {
     cartBoxTrigger.reverse();
   }
 });
+
+brandButton.addEventListener('click', function (el) {
+  el.stopPropagation();
+  brandsBoxTrigger.play()
+  mobileHeaderMove.play();
+  searchBoxTrigger.play()
+  menuTrigger.reverse();
+
+
+  // let elPlaceholder = brandButton.dataset.placeholder;
+  // let inputPlaceholder = headSearchInput.dataset.placeholder;
+
+  // if (inputPlaceholder === elPlaceholder) {
+  //   headSearchInput.placeholder = inputPlaceholder
+
+  // } else {
+  //   headSearchInput.placeholder = elPlaceholder;
+  // }
+
+
+
+  burgerSearch.classList.toggle("active");
+  burgerMenu.classList.remove("active");
+  headerBody.classList.remove("open");
+})
+
 
 subTriggers.forEach((trigger) => {
   let nextSub = trigger.lastChild.previousSibling;
