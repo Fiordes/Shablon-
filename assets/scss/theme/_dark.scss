@@ -107,5 +107,67 @@ body.dark {
         }
     }
 
+    .large {
+        &__preferences {
+            &-describe {
+                p {
+                    color: #CACACA;
+                }
+            }
+        }
+
+        .news {
+            &-date {
+                color: #5f5f5f;
+            }
+        }
+    }
+
+    .main-title {
+        color: #f0f0f0;
+    }
+
+
+
+    .footer {
+
+        &__title,
+        &__text,
+        &__phone,
+        &__address {
+            color: #cacaca;
+        }
+
+        &__btn {
+            background: transparent;
+            border-color: $colour-text-pink;
+            color: #f0f0f0;
+        }
+
+        &__subtitle {
+            color: $colour-text-pink;
+        }
+
+
+        &__nav-item {
+            a {
+                color: #cacaca;
+            }
+        }
+
+        &__rights {
+            &::after {
+                background: #2F2E2E;
+            }
+
+            p {
+                color: #CACACA;
+
+                a {
+                    color: $colour-text-pink;
+                }
+            }
+        }
+    }
 
 }

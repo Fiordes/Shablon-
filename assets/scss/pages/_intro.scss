@@ -4,7 +4,7 @@
     position: relative;
     z-index: 10;
 
-    .main__title {
+    .main-title {
         margin-bottom: 32px;
     }
 
@@ -35,7 +35,7 @@
 
 
         @include media(desktop) {
-            margin-bottom: 0;
+            margin-bottom: 30px;
             flex-direction: row;
         }
 
@@ -56,6 +56,7 @@
 
             @include media(desktop) {
                 margin-right: 32px;
+                max-width: 101px;
             }
         }
 
@@ -76,8 +77,8 @@
             margin-bottom: 16px;
 
             @include media(desktop) {
-                width: auto;
-                height: auto;
+                // width: auto;
+                // height: auto;
                 margin-bottom: 32px;
             }
         }

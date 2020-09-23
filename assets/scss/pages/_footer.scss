@@ -7,6 +7,7 @@ $colors: #FF0000,
 
 .footer {
     padding: 32px;
+    overflow: hidden;
 
     @include media(desktop) {
         padding: 64px 32px;
@@ -156,7 +157,14 @@ $colors: #FF0000,
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            align-items: flex-end;
+            align-items: flex-start;
+            width: fit-content;
+            margin-left: auto;
+            margin-bottom: 54px;
+        }
+
+        h6.footer__subtitle {
+            margin-bottom: 17px;
         }
 
         &-list {
@@ -179,6 +187,19 @@ $colors: #FF0000,
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
+        position: relative;
+
+
+        &:after {
+            content: '';
+            width: 1000%;
+            height: 80px;
+            background: #FCFCFC;
+            z-index: 1;
+            position: absolute;
+            left: -25%;
+            top: -24px;
+        }
 
         @include media(desktop) {
             flex-direction: row;
@@ -191,9 +212,11 @@ $colors: #FF0000,
             font-size: 12px;
             line-height: 150%;
             color: #5F5F5F;
+            z-index: 2;
             margin-bottom: 12px;
 
             @include media(desktop) {
+                max-width: 400px;
                 margin-bottom: 0;
             }
         }
@@ -201,6 +224,7 @@ $colors: #FF0000,
 
     &__colourpicker {
         display: flex;
+        z-index: 2;
 
         li {
             margin-right: 8px;

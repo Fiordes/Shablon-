@@ -240,30 +240,32 @@ cartButton.addEventListener("click", function (el) {
   }
 });
 
-brandButton.addEventListener('click', function (el) {
-  el.stopPropagation();
-  brandsBoxTrigger.play()
-  mobileHeaderMove.play();
-  searchBoxTrigger.play()
-  menuTrigger.reverse();
+if (brandButton) {
+  brandButton.addEventListener('click', function (el) {
+    el.stopPropagation();
+    brandsBoxTrigger.play()
+    mobileHeaderMove.play();
+    searchBoxTrigger.play()
+    menuTrigger.reverse();
 
 
-  // let elPlaceholder = brandButton.dataset.placeholder;
-  // let inputPlaceholder = headSearchInput.dataset.placeholder;
+    // let elPlaceholder = brandButton.dataset.placeholder;
+    // let inputPlaceholder = headSearchInput.dataset.placeholder;
 
-  // if (inputPlaceholder === elPlaceholder) {
-  //   headSearchInput.placeholder = inputPlaceholder
+    // if (inputPlaceholder === elPlaceholder) {
+    //   headSearchInput.placeholder = inputPlaceholder
 
-  // } else {
-  //   headSearchInput.placeholder = elPlaceholder;
-  // }
+    // } else {
+    //   headSearchInput.placeholder = elPlaceholder;
+    // }
 
 
 
-  burgerSearch.classList.toggle("active");
-  burgerMenu.classList.remove("active");
-  headerBody.classList.remove("open");
-})
+    burgerSearch.classList.toggle("active");
+    burgerMenu.classList.remove("active");
+    headerBody.classList.remove("open");
+  })
+}
 
 
 subTriggers.forEach((trigger) => {
