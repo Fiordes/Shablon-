@@ -198,7 +198,12 @@ $colors: #FF0000,
             z-index: 1;
             position: absolute;
             left: -25%;
-            top: -24px;
+            top: -14px;
+
+            @include media(desktop) {
+                top: -24px;
+
+            }
         }
 
         @include media(desktop) {

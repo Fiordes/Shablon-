@@ -27,6 +27,9 @@ const subMenusLinks = document.querySelectorAll(
 
 const headSearchInput = document.querySelector('#search');
 
+
+
+
 // Dark theme
 const darkThemeTrigger = document.querySelector(".header__mobile-theme");
 const darkThemeTriggerLink = document.querySelector(".header__mobile-theme a");
@@ -148,8 +151,8 @@ cartBoxTrigger.fromTo(
     y: "100%",
     display: "none",
   }, {
-    y: "15%",
-    display: "block",
+    y: "12%",
+    display: "grid",
   }
 );
 cartBoxTrigger.pause();
@@ -193,7 +196,7 @@ burgerMenu.addEventListener("click", function () {
   cartBox.classList.remove("visible");
   mobileHead.classList.toggle("open");
 
-  // lockBody();
+  lockBody();
   menuTrigger.play();
 
   if (!headerBody.classList.contains("open")) {
@@ -356,4 +359,72 @@ categoryMenu.forEach((item) => {
     }
 
   })
+})
+
+
+// Tabs in cart
+
+const newTab = document.querySelector('.tab__new');
+const newTabTrigger = document.querySelector('#new-tab-trigger');
+
+const authTab = document.querySelector('.tab__auth');
+const authTabTrigger = document.querySelector('#auth-tab-trigger');
+
+let newTabSwitch = new gsap.timeline();
+
+newTabSwitch.fromTo(
+  newTab,
+  0.2, {
+    x: 0,
+    opacity: 1,
+    // display: 'block'
+
+  }, {
+    x: "-100%",
+    opacity: 0,
+    // display: 'none'
+  }
+);
+newTabSwitch.pause();
+
+let authTabSwitch = new gsap.timeline();
+
+authTabSwitch.fromTo(
+  authTab,
+  0.2, {
+    x: 0,
+    opacity: 0,
+    // display: 'none'
+  }, {
+    x: "-100%",
+    opacity: 1,
+    // display: 'block'
+
+  }
+);
+authTabSwitch.pause();
+
+
+
+
+
+
+
+
+newTabTrigger.addEventListener('click', function (e) {
+
+  newTabTrigger.classList.add('current')
+  authTabTrigger.classList.remove('current')
+  e.preventDefault();
+  newTabSwitch.reverse()
+  authTabSwitch.reverse()
+})
+
+authTabTrigger.addEventListener('click', function (e) {
+  e.preventDefault();
+  newTabTrigger.classList.remove('current')
+  authTabTrigger.classList.add('current')
+  newTabSwitch.play();
+  authTabSwitch.play()
+
 })

@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./assets/scss/main.css" />
 </head>
 
-<body class="dark">
+<body class="">
   <header class="header">
     <nav class="header__mobile-nav">
       <div class="header__mobile-head">
@@ -1507,83 +1507,256 @@
     </form>
   </div>
   <div class="cart__box">
-    <div class="cart__box-head">
-      <h4 class="cart__box-title">Ваша корзина</h4>
-      <span class="cart__box-count">3 товара</span>
-    </div>
-    <div class="cart__box-body">
-      <ul class="cart__box-list">
-        <li class="cart__box-item">
-          <figure>
-            <img src="./assets/img/search/2.png" alt="" />
-            <figcaption>
-              <div class="cart__box-row">
-                <h6 class="cart__box-description">
-                  Безпроводная аккустическа ситема Beoplay M5
-                </h6>
-                <a href="" class="cart__box-delete">
-                  <img src="./assets/img/search/bin.svg" alt="" />
-                </a>
-              </div>
-              <div class="cart__box-row">
-                <p class="cart__box-price">15 000 руб.</p>
-                <div class="cart__box-total">
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                    -
-                  </button>
-                  <input class="total__item-count" min="0" name="quantity" value="1" type="number" />
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
-                    +
-                  </button>
+    <div class="cart__box-l">
+      <div class="cart__box-head">
+        <h4 class="cart__box-title">Ваша корзина</h4>
+        <span class="cart__box-count">3 товара</span>
+      </div>
+      <div class="cart__box-body grid-body">
+        <ul class="cart__box-list">
+          <li class="cart__box-item">
+            <figure>
+              <img src="./assets/img/search/2.png" alt="" />
+              <figcaption>
+                <div class="cart__box-row">
+                  <h6 class="cart__box-description">
+                    Безпроводная аккустическа ситема Beoplay M5
+                  </h6>
+                  <a href="" class="cart__box-delete">
+                    <span>удалить</span>
+                    <img src="./assets/img/search/bin.svg" alt="" />
+                  </a>
                 </div>
-              </div>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="cart__box-item">
-          <figure>
-            <img src="./assets/img/search/2.png" alt="" />
-            <figcaption>
-              <div class="cart__box-row">
-                <h6 class="cart__box-description">
-                  Безпроводная аккустическа ситема Beoplay M5
-                </h6>
-                <a href="" class="cart__box-delete">
-                  <img src="./assets/img/search/bin.svg" alt="" />
-                </a>
-              </div>
-              <div class="cart__box-row">
-                <p class="cart__box-price">15 000 руб.</p>
-                <div class="cart__box-total">
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                    -
-                  </button>
-                  <input class="total__item-count" min="0" name="quantity" value="1" type="number" />
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                <div class="cart__box-row">
+                  <div class="cart__box-price">
+                    <span class="item-price">15 000 руб.</span>
                     +
-                  </button>
+                    <span class="item-pieces">3шт</span>
+                    =
+                    <span class="total-sum">45 000</span>
+                  </div>
+                  <div class="cart__box-total">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      -
+                    </button>
+                    <input class="total__item-count" min="0" name="quantity" value="1" type="number" />
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                      +
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-      <div class="cart__box-calculation calculation">
-        <div class="calculation__total">
-          <span>Всего</span>
-          <span class="calculation__total-value">67 000 руб.</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="cart__box-item">
+            <figure>
+              <img src="./assets/img/search/2.png" alt="" />
+              <figcaption>
+                <div class="cart__box-row">
+                  <h6 class="cart__box-description">
+                    Безпроводная аккустическа ситема Beoplay M5
+                  </h6>
+                  <a href="" class="cart__box-delete">
+                    <span>удалить</span>
+
+                    <img src="./assets/img/search/bin.svg" alt="" />
+                  </a>
+                </div>
+                <div class="cart__box-row">
+                  <div class="cart__box-price">15 000 руб.</div>
+                  <div class="cart__box-total">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      -
+                    </button>
+                    <input class="total__item-count" min="0" name="quantity" value="1" type="number" />
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                      +
+                    </button>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <div class="cart__box-promotion">
+          <div class="cart__box-promocode">
+            <input type="text" name="promocode" id="promocode" placeholder="Промокод">
+            <button class="activate">АКТИВИРОВАТЬ</button>
+          </div>
+          <div class="cart__box-points">
+            <div class="points-head">
+              <a href="#">
+                <img src="./assets/img/cart/wallet-alt.svg" alt="">
+                <span>4118.56 </span>
+              </a>
+              <a href="#">
+                <img src="./assets/img/cart/discount.svg" alt="">
+                <span>6 884,15</span>
+              </a>
+            </div>
+            <div class="points-body">
+              <p>У вас есть <span>4118.56 бонусных баллов!</span> Вы можете использовать свои баллы, чтобы получить
+                скидку
+                <span>6 884,15 Р.</span></p>
+            </div>
+            <button class="activate">ИСПОЛЬЗОВАТЬ БАЛЫ</button>
+
+          </div>
         </div>
-        <div class="calculation__discount">
-          <span>Скидка</span>
-          <span class="calculation__discount-value">- 2 000 руб.</span>
+        <div class="cart__box-calculation calculation">
+          <div class="calculation__total">
+            <span>Всего</span>
+            <span class="calculation__total-value">67 000 руб.</span>
+          </div>
+          <div class="calculation__discount">
+            <span>Скидка</span>
+            <span class="calculation__discount-value">- 2 000 руб.</span>
+          </div>
+          <div class="calculation__final">
+            <span>Итого</span>
+            <span class="calculation__final-value">65 000 руб.</span>
+          </div>
         </div>
-        <div class="calculation__final">
-          <span>Итого</span>
-          <span class="calculation__final-value">65 000 руб.</span>
+        <button class="cart__box-submit mobile">Оформить заказ</button>
+
+        <div class="cart__box-bonus">
+          <img src="./assets/img/cart/gift.svg" alt="">
+          <p>Этот заказ добавит <span>+37,60 Р бонусных баллов</span>, которые вы затем сможете использовать для
+            получения дополнительных скидок.</p>
+        </div>
+
+        <div class="cart__box-warnlist">
+          <h3 class="main__title">
+            Обратите <br>
+            Внимание
+          </h3>
+          <ul class="warn__slider">
+            <li class="warn__slider-item slide">
+              <figure>
+                <img src="./assets/img/cart/shoes.png" alt="">
+                <figcaption>
+                  <p class="slide__description">Кросовки Puma Roadster 2020 Summer</p>
+                  <div class="slide__price">
+                    <span class="slide__price-new">15000</span>
+                    <span class="slide__price-old">25 000</span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="warn__slider-item slide">
+              <figure>
+                <img src="./assets/img/cart/shoes.png" alt="">
+                <figcaption>
+                  <p class="slide__description">Кросовки Puma Roadster 2020 Summer</p>
+                  <div class="slide__price">
+                    <span class="slide__price-new">15000</span>
+                    <span class="slide__price-old">25 000</span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="warn__slider-item slide">
+              <figure>
+                <img src="./assets/img/cart/shoes.png" alt="">
+                <figcaption>
+                  <p class="slide__description">Кросовки Puma Roadster 2020 Summer</p>
+                  <div class="slide__price">
+                    <span class="slide__price-new">15000</span>
+                    <span class="slide__price-old">25 000</span>
+                  </div>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
         </div>
       </div>
-      <button class="cart__box-submit">Оформить заказ</button>
     </div>
+    <div class="cart__box-r">
+      <div class="cart__box-head">
+        <h4 class="cart__box-title">Оформление</h4>
+      </div>
+      <div class="cart__box-body tabs-body">
+        <div class="cart__box-tabnames">
+          <a href="#" id='new-tab-trigger'>Новый <br>
+            Покупатель</a>
+          <a href="#" id='auth-tab-trigger'>Авторизироваться</a>
+        </div>
+        <div class="cart__box-tabs">
+          <div class="tab__new current">
+            <form class="tab__new-form tab__forms">
+              <div class="tab__forms-contacts">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш телефон">
+
+                <input type="text" placeholder="Ваша фамилия">
+              </div>
+              <h3>Доставка</h3>
+              <div class="tab__forms-delivery">
+                <div class="select__wrapper">
+                  <select name="country" id="delivery-country">Страна</select>
+
+                </div>
+                <div class="select__wrapper">
+                  <select name="region" id="delivery-region">Регион</select>
+
+                </div>
+                <div class="select__wrapper">
+                  <select name="town" id="delivery-town">Город</select>
+
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="tab__auth">
+            <form class="tab__new-form tab__forms">
+              <div class="tab__forms-contacts">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш телефон">
+
+                <input type="text" placeholder="Ваша фамилия">
+              </div>
+              <h3>ZASTAVKA</h3>
+              <div class="tab__forms-delivery">
+                <div class="select__wrapper">
+                  <select name="country" id="delivery-country">Страна</select>
+
+                </div>
+                <div class="select__wrapper">
+                  <select name="region" id="delivery-region">Регион</select>
+
+                </div>
+                <div class="select__wrapper">
+                  <select name="town" id="delivery-town">Город</select>
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="cart__box-footer">
+        <div class="cart__box-calculation calculation">
+          <div class="calculation__total">
+            <span>Всего</span>
+            <span class="calculation__total-value">67 000 руб.</span>
+          </div>
+          <div class="calculation__discount">
+            <span>Скидка</span>
+            <span class="calculation__discount-value">- 2 000 руб.</span>
+          </div>
+          <div class="calculation__final">
+            <span>Итого</span>
+            <span class="calculation__final-value">65 000 руб.</span>
+          </div>
+        </div>
+
+
+        <button class="cart__box-submit">Оформить заказ</button>
+
+      </div>
+
+    </div>
+
   </div>
   <div class="search__box">
     <div class="search__box-head">
