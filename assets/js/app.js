@@ -87,7 +87,11 @@ function lockBody() {
 // GSAP Functions
 
 // Main Menu
-let menuTrigger = new gsap.timeline();
+let menuTrigger = new gsap.timeline({
+  defaults: {
+    // ease: 'power1.out'
+  }
+});
 menuTrigger.fromTo(
   headerBody,
   0.2, {
@@ -109,10 +113,11 @@ searchBoxTrigger.fromTo(
     x: "120%",
     display: "none",
   }, {
-    x: "20%",
+    x: "22%",
     display: "block",
   }
 );
+
 searchBoxTrigger.pause();
 
 let searchResultTrigger = new gsap.timeline();
@@ -122,7 +127,7 @@ searchResultTrigger.fromTo(
     y: "100%",
     display: "none",
   }, {
-    y: "12%",
+    y: "29%",
     display: "block",
   }
 );
@@ -166,8 +171,8 @@ mobileHeaderMove.fromTo(
   0.2, {
     x: 0,
   }, {
-    x: "-80%",
-  }
+    x: "-78%",
+  }, "-=2"
 );
 mobileHeaderMove.pause();
 
@@ -197,6 +202,8 @@ searchButton.addEventListener("click", function (el) {
   mobileHeaderMove.play();
   searchResultTrigger.play();
 
+  searchButton.style.pointerEvents = 'none';
+
   burgerSearch.classList.toggle("active");
   burgerMenu.classList.remove("active");
   headerBody.classList.remove("open");
@@ -215,6 +222,8 @@ searchWideButton.addEventListener("click", function (el) {
 });
 
 burgerSearch.addEventListener("click", function () {
+  searchButton.style.pointerEvents = 'all';
+
   mobileHeaderMove.reverse();
   searchBoxTrigger.reverse();
   searchResultTrigger.reverse();

@@ -141,7 +141,7 @@ body.dark {
         }
     }
 
-    .main__title {
+    .main-title {
         color: #f0f0f0;
     }
 
@@ -150,6 +150,11 @@ body.dark {
     .cart__box {
         &-price {
             color: #f0f0f0;
+        }
+
+        .total__item-count {
+            background: transparent;
+            color: #cacaca;
         }
 
         input {
@@ -167,6 +172,22 @@ body.dark {
 
             }
 
+        }
+
+        &-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .points-body {
+            p {
+                color: $colour-text-main;
+            }
+        }
+
+        .activate {
+
+            background: transparent;
+            color: $colour-text-main;
         }
     }
 
@@ -192,6 +213,8 @@ body.dark {
     .search__result .show__card-description {
         color: $colour-text-main;
     }
+
+
 
 
 
