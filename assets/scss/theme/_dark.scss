@@ -48,6 +48,16 @@ body.dark {
         }
     }
 
+    .header__wide {
+        a {
+            color: #f0f0f0;
+        }
+
+        img {
+            filter: invert(1) hue-rotate(180deg);
+        }
+    }
+
 
 
     .search__box {
@@ -105,6 +115,14 @@ body.dark {
         a {
             color: #cacaca
         }
+
+        &__categories-item {
+            img {
+                filter: invert(1) hue-rotate(180deg);
+
+            }
+        }
+
     }
 
     .large {
@@ -123,8 +141,56 @@ body.dark {
         }
     }
 
-    .main-title {
+    .main__title {
         color: #f0f0f0;
+    }
+
+    // CARTBOX
+
+    .cart__box {
+        &-price {
+            color: #f0f0f0;
+        }
+
+        input {
+            background: #fff;
+        }
+
+        &-tabnames {
+            a {
+                color: #f0f0f0;
+                transition: all 0.3s;
+
+                &.current {
+                    color: $colour-text-pink;
+                }
+
+            }
+
+        }
+    }
+
+    // SEARCH RESULT BOX
+    .search__result-title,
+    .search__history-header {
+        color: #f0f0f0;
+
+    }
+
+    .buy__card-price {
+        color: #f0f0f0;
+    }
+
+    .buy__card-rating {
+
+        span {
+            color: #f0f0f0;
+
+        }
+    }
+
+    .search__result .show__card-description {
+        color: $colour-text-main;
     }
 
 

@@ -1,1436 +1,1465 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maket</title>
-    <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Styles -->
-    <link rel="stylesheet" href="./assets/scss/main.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <nav class="header__mobile-nav">
-        <div class="header__mobile-head">
-          <div class="burger__menu">
-            <span></span>
-          </div>
-          <div class="logo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maket</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/scss/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__mobile-nav">
+      <div class="header__mobile-head">
+        <div class="burger__menu">
+          <span></span>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/img/mobile-nav/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="toggle__box">
+          <a class="toggle__box-cart" href="#"><img src="./assets/img/mobile-nav/shopping-cart.svg" alt="" /></a>
+
+          <a class="toggle__box-search" href="#"><img src="./assets/img/mobile-nav/search.svg" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="header__mobile-body">
+        <ul class="header__mobile-list first__list">
+          <h4 class="header__mobile-subtitle">Ассортимент</h4>
+
+          <li class="header__mobile-item have__sub">
+            <img src="./assets/img/mobile-nav/router.svg" alt="" />
+            <a href="#" class="header__mobile-link trigger">Портативная Аккустика</a>
+            <div class="header__mobile-submenu">
+              <ul class="header__mobile-list">
+                <h4>Портативная Аккустика</h4>
+
+                <li class="header__mobile-item back">
+                  <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                  назад
+                </li>
+
+                <li class="header__mobile-item have__sub">
+                  <a class="trigger" href="#">Bang & Olufsen</a>
+                  <div class="header__mobile-submenu">
+                    <h4>Bang & Olufsen</h4>
+                    <ul class="header__mobile-list">
+                      <li class="header__mobile-item back">
+                        <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                        назад
+                      </li>
+
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">JBL</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Panasonic</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">SONLY</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">WOOM</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__mobile-item have__sub">
+                  <a class="trigger" href="#">JBL</a>
+                  <div class="header__mobile-submenu">
+                    <h4>JBL</h4>
+                    <ul class="header__mobile-list">
+                      <li class="header__mobile-item back">
+                        <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                        назад
+                      </li>
+
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">JBL</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Panasonic</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">SONLY</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">WOOM</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__mobile-item have__sub">
+                  <a class="trigger" href="#">Panasonic</a>
+                  <div class="header__mobile-submenu">
+                    <h4>Panasonic</h4>
+                    <ul class="header__mobile-list">
+                      <li class="header__mobile-item back">
+                        <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                        назад
+                      </li>
+
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">JBL</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Panasonic</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">SONLY</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">WOOM</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__mobile-item have__sub">
+                  <a class="trigger" href="#">SONLY</a>
+                  <div class="header__mobile-submenu">
+                    <h4>SONLY</h4>
+                    <ul class="header__mobile-list">
+                      <li class="header__mobile-item back">
+                        <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                        назад
+                      </li>
+
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">JBL</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Panasonic</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">SONLY</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">WOOM</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__mobile-item have__sub">
+                  <a class="trigger" href="#">WOOM</a>
+                  <div class="header__mobile-submenu">
+                    <h4>WOOM</h4>
+                    <ul class="header__mobile-list">
+                      <li class="header__mobile-item back">
+                        <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                        назад
+                      </li>
+
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">JBL</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Panasonic</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">SONLY</a>
+                      </li>
+                      <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">WOOM</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__mobile-item have__sub sale">
+            <img src="./assets/img/mobile-nav/headphones.svg" alt="" />
+            <a href="#" class="header__mobile-link trigger">Наушники
+              <span class="badge badge__sale">РАСПРОДАЖА</span>
+            </a>
+            <div class="header__mobile-submenu">
+              <h4>Наушники</h4>
+              <ul class="header__mobile-list">
+                <li class="header__mobile-item back">
+                  <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                  назад
+                </li>
+
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">JBL</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">Panasonic</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">SONLY</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">WOOM</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__mobile-item have__sub">
+            <img src="./assets/img/mobile-nav/laptop.svg" alt="" />
+            <a href="#" class="header__mobile-link trigger">Ноутбуки</a>
+            <div class="header__mobile-submenu">
+              <h4>Ноутбуки</h4>
+              <ul class="header__mobile-list">
+                <li class="header__mobile-item back">
+                  <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                  назад
+                </li>
+
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">JBL</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">Panasonic</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">SONLY</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">WOOM</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__mobile-item have__sub">
+            <img src="./assets/img/mobile-nav/mobile.svg" alt="" />
+            <a href="#" class="header__mobile-link trigger">Мобильные технологии</a>
+            <div class="header__mobile-submenu">
+              <h4>Мобильные технологии</h4>
+              <ul class="header__mobile-list">
+                <li class="header__mobile-item back">
+                  <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                  назад
+                </li>
+
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">JBL</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">Panasonic</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">SONLY</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">WOOM</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__mobile-item have__sub">
+            <img src="./assets/img/mobile-nav/star.svg" alt="" />
+            <a href="#" class="header__mobile-link trigger">Бренды</a>
+            <div class="header__mobile-submenu">
+              <ul class="header__mobile-list">
+                <li class="header__mobile-item back">
+                  <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
+                  назад
+                </li>
+
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">Bang & Olufsen</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">JBL</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">Panasonic</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">SONLY</a>
+                </li>
+                <li class="header__mobile-item">
+                  <a href="#" class="header__mobile-link">WOOM</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+        <h4 class="header__mobile-subtitle">Доп-информация</h4>
+        <ul class="header__mobile-list more__list">
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link">
+              Тема дизайна для ShopScript
+            </a>
+          </li>
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link"> Установка темы </a>
+          </li>
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link"> Типографика </a>
+          </li>
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link"> Контракт </a>
+          </li>
+        </ul>
+
+        <ul class="header__mobile-btns">
+          <li><a href="#">поддержка</a></li>
+          <li class="current"><a href="#">магазин</a></li>
+          <li><a href="#">сайт</a></li>
+          <li><a href="#">фото</a></li>
+        </ul>
+
+        <div class="header__mobile-user">
+          <img src="./assets/img/user/1.png" alt="" class="user__icon" />
+          <h6 class="user__name">Дональд Мамп</h6>
+          <a href="#" class="user__logout">
+            <img src="./assets/img/user/logout.svg" alt="" />
+          </a>
+        </div>
+        <ul class="header__mobile-list more__list">
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link"> Мои заказы </a>
+          </li>
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link">
+              Прогирамма лояльности
+            </a>
+          </li>
+          <li class="header__mobile-item">
+            <a href="#" class="header__mobile-link"> Мой профиль </a>
+          </li>
+        </ul>
+        <div class="header__mobile-theme">
+          <p>Режим</p>
+          <a href="#">
+            <img src="./assets/img/mobile-nav/sun.svg" alt="sun" />
+            День
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header__wide">
+      <div class="header__wide-head">
+        <ul class="header__wide-submenu">
+          <li class="submenu-item active"><a href="#">Магазин</a></li>
+          <li class="submenu-item"><a href="#">Об Epika 2.0</a></li>
+          <li class="submenu-item"><a href="#">Сапорт</a></li>
+          <li class="submenu-item"><a href="#">Блог</a></li>
+          <li class="submenu-item"><a href="#">Фото</a></li>
+        </ul>
+        <ul class="header__wide-links">
+          <li class="header__wide-compare">
             <a href="#">
-              <img src="./assets/img/mobile-nav/logo.png" alt="" />
+              <img src="./assets/img/wide-nav/loop.svg" alt="" />
+              Сравнить товары
             </a>
-          </div>
-          <div class="toggle__box">
-            <a class="toggle__box-cart" href="#"
-              ><img src="./assets/img/mobile-nav/shopping-cart.svg" alt=""
-            /></a>
-
-            <a class="toggle__box-search" href="#"
-              ><img src="./assets/img/mobile-nav/search.svg" alt=""
-            /></a>
-          </div>
-        </div>
-
-        <div class="header__mobile-body">
-          <ul class="header__mobile-list first__list">
-            <h4 class="header__mobile-subtitle">Ассортимент</h4>
-
-            <li class="header__mobile-item have__sub">
-              <img src="./assets/img/mobile-nav/router.svg" alt="" />
-              <a href="#" class="header__mobile-link trigger"
-                >Портативная Аккустика</a
-              >
-              <div class="header__mobile-submenu">
-                <ul class="header__mobile-list">
-                  <h4>Портативная Аккустика</h4>
-
-                  <li class="header__mobile-item back">
-                    <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
-                    назад
-                  </li>
-
-                  <li class="header__mobile-item have__sub">
-                    <a class="trigger" href="#">Bang & Olufsen</a>
-                    <div class="header__mobile-submenu">
-                      <h4>Bang & Olufsen</h4>
-                      <ul class="header__mobile-list">
-                        <li class="header__mobile-item back">
-                          <img
-                            src="./assets/img/mobile-nav/arrow-left.svg"
-                            alt=""
-                          />
-                          назад
-                        </li>
-
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link"
-                            >Bang & Olufsen</a
-                          >
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">JBL</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">Panasonic</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">SONLY</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">WOOM</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="header__mobile-item have__sub">
-                    <a class="trigger" href="#">JBL</a>
-                    <div class="header__mobile-submenu">
-                      <h4>JBL</h4>
-                      <ul class="header__mobile-list">
-                        <li class="header__mobile-item back">
-                          <img
-                            src="./assets/img/mobile-nav/arrow-left.svg"
-                            alt=""
-                          />
-                          назад
-                        </li>
-
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link"
-                            >Bang & Olufsen</a
-                          >
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">JBL</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">Panasonic</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">SONLY</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">WOOM</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="header__mobile-item have__sub">
-                    <a class="trigger" href="#">Panasonic</a>
-                    <div class="header__mobile-submenu">
-                      <h4>Panasonic</h4>
-                      <ul class="header__mobile-list">
-                        <li class="header__mobile-item back">
-                          <img
-                            src="./assets/img/mobile-nav/arrow-left.svg"
-                            alt=""
-                          />
-                          назад
-                        </li>
-
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link"
-                            >Bang & Olufsen</a
-                          >
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">JBL</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">Panasonic</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">SONLY</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">WOOM</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="header__mobile-item have__sub">
-                    <a class="trigger" href="#">SONLY</a>
-                    <div class="header__mobile-submenu">
-                      <h4>SONLY</h4>
-                      <ul class="header__mobile-list">
-                        <li class="header__mobile-item back">
-                          <img
-                            src="./assets/img/mobile-nav/arrow-left.svg"
-                            alt=""
-                          />
-                          назад
-                        </li>
-
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link"
-                            >Bang & Olufsen</a
-                          >
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">JBL</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">Panasonic</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">SONLY</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">WOOM</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="header__mobile-item have__sub">
-                    <a class="trigger" href="#">WOOM</a>
-                    <div class="header__mobile-submenu">
-                      <h4>WOOM</h4>
-                      <ul class="header__mobile-list">
-                        <li class="header__mobile-item back">
-                          <img
-                            src="./assets/img/mobile-nav/arrow-left.svg"
-                            alt=""
-                          />
-                          назад
-                        </li>
-
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link"
-                            >Bang & Olufsen</a
-                          >
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">JBL</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">Panasonic</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">SONLY</a>
-                        </li>
-                        <li class="header__mobile-item">
-                          <a href="#" class="header__mobile-link">WOOM</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="header__mobile-item have__sub sale">
-              <img src="./assets/img/mobile-nav/headphones.svg" alt="" />
-              <a href="#" class="header__mobile-link trigger"
-                >Наушники
-                <span class="badge badge__sale">РАСПРОДАЖА</span>
-              </a>
-              <div class="header__mobile-submenu">
-                <h4>Наушники</h4>
-                <ul class="header__mobile-list">
-                  <li class="header__mobile-item back">
-                    <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
-                    назад
-                  </li>
-
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">Bang & Olufsen</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">JBL</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">Panasonic</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">SONLY</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">WOOM</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="header__mobile-item have__sub">
-              <img src="./assets/img/mobile-nav/laptop.svg" alt="" />
-              <a href="#" class="header__mobile-link trigger">Ноутбуки</a>
-              <div class="header__mobile-submenu">
-                <h4>Ноутбуки</h4>
-                <ul class="header__mobile-list">
-                  <li class="header__mobile-item back">
-                    <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
-                    назад
-                  </li>
-
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">Bang & Olufsen</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">JBL</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">Panasonic</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">SONLY</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">WOOM</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="header__mobile-item have__sub">
-              <img src="./assets/img/mobile-nav/mobile.svg" alt="" />
-              <a href="#" class="header__mobile-link trigger"
-                >Мобильные технологии</a
-              >
-              <div class="header__mobile-submenu">
-                <h4>Мобильные технологии</h4>
-                <ul class="header__mobile-list">
-                  <li class="header__mobile-item back">
-                    <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
-                    назад
-                  </li>
-
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">Bang & Olufsen</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">JBL</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">Panasonic</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">SONLY</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">WOOM</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="header__mobile-item have__sub">
-              <img src="./assets/img/mobile-nav/star.svg" alt="" />
-              <a href="#" class="header__mobile-link trigger">Бренды</a>
-              <div class="header__mobile-submenu">
-                <ul class="header__mobile-list">
-                  <li class="header__mobile-item back">
-                    <img src="./assets/img/mobile-nav/arrow-left.svg" alt="" />
-                    назад
-                  </li>
-
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">Bang & Olufsen</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">JBL</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">Panasonic</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">SONLY</a>
-                  </li>
-                  <li class="header__mobile-item">
-                    <a href="#" class="header__mobile-link">WOOM</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-
-          <h4 class="header__mobile-subtitle">Доп-информация</h4>
-          <ul class="header__mobile-list more__list">
-            <li class="header__mobile-item">
-              <a href="#" class="header__mobile-link">
-                Тема дизайна для ShopScript
-              </a>
-            </li>
-            <li class="header__mobile-item">
-              <a href="#" class="header__mobile-link"> Установка темы </a>
-            </li>
-            <li class="header__mobile-item">
-              <a href="#" class="header__mobile-link"> Типографика </a>
-            </li>
-            <li class="header__mobile-item">
-              <a href="#" class="header__mobile-link"> Контракт </a>
-            </li>
-          </ul>
-
-          <ul class="header__mobile-btns">
-            <li><a href="#">поддержка</a></li>
-            <li class="current"><a href="#">магазин</a></li>
-            <li><a href="#">сайт</a></li>
-            <li><a href="#">фото</a></li>
-          </ul>
-
-          <div class="header__mobile-user">
-            <img src="./assets/img/user/1.png" alt="" class="user__icon" />
-            <h6 class="user__name">Дональд Мамп</h6>
-            <a href="#" class="user__logout">
-              <img src="./assets/img/user/logout.svg" alt="" />
-            </a>
-          </div>
-          <ul class="header__mobile-list more__list">
-            <li class="header__mobile-item">
-              <a href="#" class="header__mobile-link"> Мои заказы </a>
-            </li>
-            <li class="header__mobile-item">
-              <a href="#" class="header__mobile-link">
-                Прогирамма лояльности
-              </a>
-            </li>
-            <li class="header__mobile-item">
-              <a href="#" class="header__mobile-link"> Мой профиль </a>
-            </li>
-          </ul>
-          <div class="header__mobile-theme">
-            <p>Режим</p>
+          </li>
+          <li class="header__wide-auth">
             <a href="#">
-              <img src="./assets/img/mobile-nav/sun.svg" alt="sun" />
-              День
+              <img src="./assets/img/wide-nav/user-circle.svg" alt="" />
+              Авторизация
             </a>
-          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="header__wide-body">
+        <div class="header__wide-logo">
+          <img src="./assets/img/wide-nav/logo.svg" alt="Logo" />
         </div>
-      </nav>
-
-      <div class="header__wide">
-        <div class="header__wide-head">
-          <ul class="header__wide-submenu">
-            <li class="submenu-item active"><a href="#">Магазин</a></li>
-            <li class="submenu-item"><a href="#">Об Epika 2.0</a></li>
-            <li class="submenu-item"><a href="#">Сапорт</a></li>
-            <li class="submenu-item"><a href="#">Блог</a></li>
-            <li class="submenu-item"><a href="#">Фото</a></li>
-          </ul>
-          <ul class="header__wide-links">
-            <li class="header__wide-compare">
-              <a href="#">
-                <img src="./assets/img/wide-nav/loop.svg" alt="" />
-                Сравнить товары
+        <ul class="header__wide-menu">
+          <li class="header__wide-item active">
+            <a href="#" class="menu-link">Каталог товаров</a>
+          </li>
+          <li class="header__wide-item">
+            <a href="#" class="menu-link">Бренды</a>
+          </li>
+          <li class="header__wide-item">
+            <a href="#" class="menu-link">Оплата.доставка</a>
+          </li>
+          <li class="header__wide-item">
+            <a href="#" class="menu-link">Контакты</a>
+          </li>
+        </ul>
+        <div class="header__wide-btns">
+          <a class="header__wide-phone" href="tel:+080095690099">0 800 956 900 99</a>
+          <a href="#" class="header__wide-search">
+            <img src="./assets/img/wide-nav/search.svg" alt="" />
+          </a>
+          <a href="#" class="header__wide-wishlist">
+            <img src="./assets/img/wide-nav/heart.svg" alt="" />
+          </a>
+          <a href="#" class="header__wide-cart">
+            <img src="./assets/img/wide-nav/shopping-cart.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="categories">
+    <section class="intro">
+      <div class="container">
+        <div class="intro__categories">
+          <ul class="intro__categories-list">
+            <li class="intro__categories-item">
+              <a href="#" class="intro__categories-link">
+                <img src="./assets/img/categories/game-controller.svg" alt="" />
+                <h6>Консоли</h6>
               </a>
             </li>
-            <li class="header__wide-auth">
-              <a href="#">
-                <img src="./assets/img/wide-nav/user-circle.svg" alt="" />
-                Авторизация
+            <li class="intro__categories-item">
+              <a href="#" class="intro__categories-link">
+                <img src="./assets/img/categories/laptop.svg" alt="" />
+                <h6>Ноутбуки</h6>
+              </a>
+            </li>
+            <li class="intro__categories-item">
+              <a href="#" class="intro__categories-link">
+                <img src="./assets/img/categories/mouse.svg" alt="" />
+                <h6>Переферия</h6>
+              </a>
+            </li>
+            <li class="intro__categories-item">
+              <a href="#" class="intro__categories-link">
+                <img src="./assets/img/categories/watch.svg" alt="" />
+                <h6>Часы</h6>
+              </a>
+            </li>
+            <li class="intro__categories-item">
+              <a href="#" class="intro__categories-link">
+                <img src="./assets/img/categories/headphones.svg" alt="" />
+                <h6>Наушники</h6>
+              </a>
+            </li>
+            <li class="intro__categories-item">
+              <a href="#" class="intro__categories-link">
+                <img src="./assets/img/categories/computer.svg" alt="" />
+                <h6>Компьютерная техника</h6>
               </a>
             </li>
           </ul>
-        </div>
-        <div class="header__wide-body">
-          <div class="header__wide-logo">
-            <img src="./assets/img/wide-nav/logo.svg" alt="Logo" />
-          </div>
-          <ul class="header__wide-menu">
-            <li class="header__wide-item active">
-              <a href="#" class="menu-link">Каталог товаров</a>
-            </li>
-            <li class="header__wide-item">
-              <a href="#" class="menu-link">Бренды</a>
-            </li>
-            <li class="header__wide-item">
-              <a href="#" class="menu-link">Оплата.доставка</a>
-            </li>
-            <li class="header__wide-item">
-              <a href="#" class="menu-link">Контакты</a>
-            </li>
-          </ul>
-          <div class="header__wide-btns">
-            <a class="header__wide-phone" href="tel:+080095690099"
-              >0 800 956 900 99</a
-            >
-            <a href="#" class="header__wide-search">
-              <img src="./assets/img/wide-nav/search.svg" alt="" />
-            </a>
-            <a href="#" class="header__wide-wishlist">
-              <img src="./assets/img/wide-nav/heart.svg" alt="" />
-            </a>
-            <a href="#" class="header__wide-cart">
-              <img src="./assets/img/wide-nav/shopping-cart.svg" alt="" />
-            </a>
+          <div class="intro__banner">
+            <div class="intro__banner-description">
+              <h2 class="intro__banner-title">Новая Коллекция</h2>
+              <div class="intro__banner-price">
+                <span class="new">330 000 руб.</span>
+                <span class="old">405 000</span>
+              </div>
+            </div>
+            <button class="btn text-white bg-pink">Купить</button>
           </div>
         </div>
       </div>
-    </header>
-    <main class="categories">
-      <section class="intro">
+    </section>
+    <section class="large">
+      <div class="large__mobile">
         <div class="container">
-          <div class="intro__categories">
-            <ul class="intro__categories-list">
-              <li class="intro__categories-item">
-                <a href="#" class="intro__categories-link">
-                  <img
-                    src="./assets/img/categories/game-controller.svg"
-                    alt=""
-                  />
-                  <h6>Консоли</h6>
+          <h2 class="main__title">
+            Часы <br />
+            наручные
+          </h2>
+          <div class="categories__sort">
+            <a href="#" class="categories__sort-btn"><img src="./assets/img/filter/filter.svg" alt="" />ФИЛЬТР</a>
+
+            <ul class="categories__sort-reflection">
+              <li class="active">
+                <a href="#">
+                  <img src="./assets/img/sort-type/list-layout.svg" alt="" />
                 </a>
               </li>
-              <li class="intro__categories-item">
-                <a href="#" class="intro__categories-link">
-                  <img src="./assets/img/categories/laptop.svg" alt="" />
-                  <h6>Ноутбуки</h6>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/sort-type/list-layout.svg" alt="" />
                 </a>
               </li>
-              <li class="intro__categories-item">
-                <a href="#" class="intro__categories-link">
-                  <img src="./assets/img/categories/mouse.svg" alt="" />
-                  <h6>Переферия</h6>
-                </a>
-              </li>
-              <li class="intro__categories-item">
-                <a href="#" class="intro__categories-link">
-                  <img src="./assets/img/categories/watch.svg" alt="" />
-                  <h6>Часы</h6>
-                </a>
-              </li>
-              <li class="intro__categories-item">
-                <a href="#" class="intro__categories-link">
-                  <img src="./assets/img/categories/headphones.svg" alt="" />
-                  <h6>Наушники</h6>
-                </a>
-              </li>
-              <li class="intro__categories-item">
-                <a href="#" class="intro__categories-link">
-                  <img src="./assets/img/categories/computer.svg" alt="" />
-                  <h6>Компьютерная техника</h6>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/sort-type/menu.svg" alt="" />
                 </a>
               </li>
             </ul>
-            <div class="intro__banner">
-              <div class="intro__banner-description">
-                <h2 class="intro__banner-title">Новая Коллекция</h2>
-                <div class="intro__banner-price">
-                  <span class="new">330 000 руб.</span>
-                  <span class="old">405 000</span>
-                </div>
-              </div>
-              <button class="btn text-white bg-pink">Купить</button>
-            </div>
           </div>
-        </div>
-      </section>
-      <section class="large">
-        <div class="large__mobile">
-          <div class="container">
-            <h2 class="main__title">
-              Часы <br />
-              наручные
-            </h2>
-            <div class="categories__sort">
-              <a href="#" class="categories__sort-btn"
-                ><img src="./assets/img/filter/filter.svg" alt="" />ФИЛЬТР</a
-              >
-
-              <ul class="categories__sort-reflection">
-                <li class="active">
-                  <a href="#">
-                    <img src="./assets/img/sort-type/list-layout.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/img/sort-type/list-layout.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/img/sort-type/menu.svg" alt="" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="categories__filter-result result grid-two">
-              <a class="result__card">
-                <div class="result__card-head">
-                  <img src="./assets/img/filter-result/1.jpg" alt="" />
-                  <div class="badge hot">HOT</div>
-                  <a href="#" class="like"
-                    ><img src="./assets/img/filter-result/heart.svg" alt=""
-                  /></a>
-                </div>
-                <div class="result__card-body">
-                  <h6 class="result__card-title">
-                    Lee Pucker design. Leather botinki for handsome
-                  </h6>
-                </div>
-                <div class="result__card-footer">
-                  <span class="result__card-price">$49.50</span>
-                  <button class="buy">Купить</button>
-                </div>
-              </a>
-              <div class="result__card">
-                <div class="result__card-head">
-                  <img src="./assets/img/filter-result/1.jpg" alt="" />
-                  <div class="badge hot">HOT</div>
-                  <a href="#" class="like"
-                    ><img src="./assets/img/filter-result/heart.svg" alt=""
-                  /></a>
-                </div>
-                <div class="result__card-body">
-                  <h6 class="result__card-title">
-                    Lee Pucker design. Leather botinki for handsome
-                  </h6>
-                </div>
-                <div class="result__card-footer">
-                  <span class="result__card-price">$49.50</span>
-                  <button class="buy">Купить</button>
-                </div>
+          <div class="categories__filter-result result grid-two">
+            <a class="result__card">
+              <div class="result__card-head">
+                <img src="./assets/img/filter-result/1.jpg" alt="" />
+                <div class="badge hot">HOT</div>
+                <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
               </div>
-              <div class="result__card">
-                <div class="result__card-head">
-                  <img src="./assets/img/filter-result/1.jpg" alt="" />
-                  <div class="badge hot">HOT</div>
-                  <a href="#" class="like"
-                    ><img src="./assets/img/filter-result/heart.svg" alt=""
-                  /></a>
-                </div>
-                <div class="result__card-body">
-                  <h6 class="result__card-title">
-                    Lee Pucker design. Leather botinki for handsome
-                  </h6>
-                </div>
-                <div class="result__card-footer">
-                  <span class="result__card-price">$49.50</span>
-                  <button class="buy">Купить</button>
-                </div>
+              <div class="result__card-body">
+                <h6 class="result__card-title">
+                  Lee Pucker design. Leather botinki for handsome
+                </h6>
+              </div>
+              <div class="result__card-footer">
+                <span class="result__card-price">$49.50</span>
+                <button class="buy">Купить</button>
+              </div>
+            </a>
+            <div class="result__card">
+              <div class="result__card-head">
+                <img src="./assets/img/filter-result/1.jpg" alt="" />
+                <div class="badge hot">HOT</div>
+                <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+              </div>
+              <div class="result__card-body">
+                <h6 class="result__card-title">
+                  Lee Pucker design. Leather botinki for handsome
+                </h6>
+              </div>
+              <div class="result__card-footer">
+                <span class="result__card-price">$49.50</span>
+                <button class="buy">Купить</button>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="large__wide">
-          <aside class="categories__sidebar">
-            <div class="categories__sidebar-wrapper">
-              <button class="categories__sidebar-btn">
-                <img src="./assets/img/category/filter-variant.svg" alt="" />
-                Ассортимент
-              </button>
-              <div class="categories__total">
-                <a href="#"
-                  >Все категории<span>Электроника и перефирия</span></a
-                >
+            <div class="result__card">
+              <div class="result__card-head">
+                <img src="./assets/img/filter-result/1.jpg" alt="" />
+                <div class="badge hot">HOT</div>
+                <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
               </div>
-              <ul class="categories__menu-main">
-                <li class="categories__menu-item have__dropdown">
-                  <a href="#">Электроника</a>
-                  <ul class="categories__menu-dropdown">
-                    <li class="categories__menu-item">
-                      <a href="#">Смартфоны и аксессуары</a>
-                    </li>
-                    <li class="categories__menu-item">
-                      <a href="#">Смартфоны и аксессуары</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="categories__menu-item have__dropdown">
-                  <a href="#">Одежда</a>
-                  <ul class="categories__menu-dropdown">
-                    <li class="categories__menu-item">
-                      <a href="#">Одежда 1</a>
-                    </li>
-                    <li class="categories__menu-item">
-                      <a href="#">Одежда 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="categories__menu-item have__dropdown">
-                  <a href="#"
-                    >Компьютеры
-                    <span>Планешеты & Сеть</span>
-                    <ul class="categories__menu-dropdown">
-                      <li class="categories__menu-item">
-                        <a href="#">Компьютеры 1</a>
-                      </li>
-                      <li class="categories__menu-item">
-                        <a href="#">Планешеты 2</a>
-                      </li>
-                    </ul>
-                  </a>
-                </li>
-                <li class="categories__menu-item have__dropdown">
-                  <a href="#">Бытовая техника</a>
-                  <ul class="categories__menu-dropdown">
-                    <li class="categories__menu-item">
-                      <a href="#">Бытовая 1</a>
-                    </li>
-                    <li class="categories__menu-item">
-                      <a href="#">техника 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="categories__menu-item have__dropdown">
-                  <a href="#">Дом & Сад</a>
-                  <ul class="categories__menu-dropdown">
-                    <li class="categories__menu-item">
-                      <a href="#">Дом 1</a>
-                    </li>
-                    <li class="categories__menu-item">
-                      <a href="#">Сад 2</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="categories__menu-item have__dropdown">
-                  <a href="#">Бижутерия</a>
-                  <ul class="categories__menu-dropdown">
-                    <li class="categories__menu-item">
-                      <a href="#">Бижутерия 1</a>
-                    </li>
-                    <li class="categories__menu-item">
-                      <a href="#">Бижутерия 2</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="filter">
-                <form class="filter__box-form">
-                  <h3>Фильтр</h3>
-                  <div class="input-field">
-                    <select name="price">
-                      <option value="">Цена, руб.</option>
-                      <option value="">Цена, usd.</option>
-                    </select>
-                  </div>
-                  <div class="input-field">price range</div>
-                  <div class="input-field">
-                    <h6 class="acordeon-trigger">Производитель</h6>
-                    <div class="producer accordeon-body">
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        Apple
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        Bang & Olufsen
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        BOSS
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        JBL
-                      </label>
-                    </div>
-                    <h6 class="acordeon-trigger">Мощность</h6>
-                    <div class="producer accordeon-body">
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        Apple
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        Bang & Olufsen
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        BOSS
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        JBL
-                      </label>
-                    </div>
-                    <h6 class="acordeon-trigger">Разьемы</h6>
-                    <div class="producer accordeon-body">
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        Apple
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        Bang & Olufsen
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        BOSS
-                      </label>
-                      <label class="disabled">
-                        <input type="checkbox" name="" />
-                        <span class="checkbox-custom"></span>
-                        JBL
-                      </label>
-                    </div>
-                    <h6 class="acordeon-trigger">Безпроводной интерфес</h6>
-                    <div class="producer accordeon-body">
-                      <ul class="interface__options">
-                        <li><a href="#"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <button class="form-btn reset">Сбросить</button>
-                  <button class="form-btn show-result">
-                    Показать <span>25</span> результатов
-                  </button>
-                </form>
+              <div class="result__card-body">
+                <h6 class="result__card-title">
+                  Lee Pucker design. Leather botinki for handsome
+                </h6>
+              </div>
+              <div class="result__card-footer">
+                <span class="result__card-price">$49.50</span>
+                <button class="buy">Купить</button>
               </div>
             </div>
-          </aside>
-          <article class="categories__filter">
-            <h2 class="categories__title">Цифровая техника</h2>
-            <div class="categories__slider">
-              <div class="categories__slider-item">
-                <img src="./assets/img/category/slider/1.png" alt="" />
-                <h5>Планшеты</h5>
-                <a href="#">125 товаров</a>
-              </div>
-              <div class="categories__slider-item">
-                <img src="./assets/img/category/slider/1.png" alt="" />
-                <h5>Планшеты</h5>
-                <a href="#">125 товаров</a>
-              </div>
-              <div class="categories__slider-item">
-                <img src="./assets/img/category/slider/1.png" alt="" />
-                <h5>Планшеты</h5>
-                <a href="#">125 товаров</a>
-              </div>
-              <div class="categories__slider-item">
-                <img src="./assets/img/category/slider/1.png" alt="" />
-                <h5>Планшеты</h5>
-                <a href="#">125 товаров</a>
-              </div>
-              <div class="categories__slider-item">
-                <img src="./assets/img/category/slider/1.png" alt="" />
-                <h5>Планшеты</h5>
-                <a href="#">125 товаров</a>
-              </div>
-            </div>
-            <div class="categories__sort">
-              <div class="categories__sort-wrapper">
-                <span>СОРТИРОВКА</span>
-                <select class="categories__sort-select" name="" id="">
-                  <option value="От дешевых к дорогим">
-                    От дешевых к дорогим
-                  </option>
-                  <option value="От дешевых к дорогим">От дорогим</option>
-                  <option value="От дешевых к дорогим">дешевых</option>
-                </select>
-              </div>
-              <ul class="categories__sort-reflection">
-                <li class="active">
-                  <a href="#">
-                    <img src="./assets/img/sort-type/list-layout.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/img/sort-type/list-layout.svg" alt="" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./assets/img/sort-type/menu.svg" alt="" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="categories__filtered">
-              <p>Отфильтровано:</p>
-              <div class="categories__filtered-options">
-                <span class="options-brand"
-                  >Bang & Olufsen
-                  <a href="#"
-                    ><img
-                      src="./assets/img/filtered/pink-cross.svg"
-                      alt="" /></a
-                ></span>
-                <span class="options-reset"
-                  >сбросить
-                  <a href="#"
-                    ><img src="./assets/img/filtered/bin.svg" alt="" /></a
-                ></span>
-              </div>
-            </div>
-            <div class="categories__filter-result result">
-              <div class="result__card">
-                <div class="result__card-head">
-                  <img src="./assets/img/filter-result/1.jpg" alt="" />
-                  <div class="badge hot">HOT</div>
-                  <a href="#" class="like"
-                    ><img src="./assets/img/filter-result/heart.svg" alt=""
-                  /></a>
-                </div>
-                <div class="result__card-body">
-                  <h6 class="result__card-title">
-                    Lee Pucker design. Leather botinki for handsome
-                  </h6>
-                  <span class="result__card-price">$49.50</span>
-                  <p class="result__card-description">
-                    Wordwide shifting available Buyers protection possible!
-                  </p>
-                </div>
-                <div class="result__card-footer">
-                  <div class="result__card-rating">
-                    <ul class="result__card-stars">
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                    </ul>
-                    <span>4.99</span>
-                  </div>
-                  <button class="buy">Купить</button>
-                </div>
-              </div>
-              <div class="result__card">
-                <div class="result__card-head">
-                  <img src="./assets/img/filter-result/1.jpg" alt="" />
-                  <div class="badge hot">HOT</div>
-                  <a href="#" class="like"
-                    ><img src="./assets/img/filter-result/heart.svg" alt=""
-                  /></a>
-                </div>
-                <div class="result__card-body">
-                  <h6 class="result__card-title">
-                    Lee Pucker design. Leather botinki for handsome
-                  </h6>
-                  <span class="result__card-price">$49.50</span>
-                  <p class="result__card-description">
-                    Wordwide shifting available Buyers protection possible!
-                  </p>
-                </div>
-                <div class="result__card-footer">
-                  <div class="result__card-rating">
-                    <ul class="result__card-stars">
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                    </ul>
-                    <span>4.99</span>
-                  </div>
-                  <button class="buy">Купить</button>
-                </div>
-              </div>
-              <div class="result__card">
-                <div class="result__card-head">
-                  <img src="./assets/img/filter-result/1.jpg" alt="" />
-                  <div class="badge hot">HOT</div>
-                  <a href="#" class="like"
-                    ><img src="./assets/img/filter-result/heart.svg" alt=""
-                  /></a>
-                </div>
-                <div class="result__card-body">
-                  <h6 class="result__card-title">
-                    Lee Pucker design. Leather botinki for handsome
-                  </h6>
-                  <span class="result__card-price">$49.50</span>
-                  <p class="result__card-description">
-                    Wordwide shifting available Buyers protection possible!
-                  </p>
-                </div>
-                <div class="result__card-footer">
-                  <div class="result__card-rating">
-                    <ul class="result__card-stars">
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                    </ul>
-                    <span>4.99</span>
-                  </div>
-                  <button class="buy">Купить</button>
-                </div>
-              </div>
-              <div class="result__card">
-                <div class="result__card-head">
-                  <img src="./assets/img/filter-result/1.jpg" alt="" />
-                  <div class="badge hot">HOT</div>
-                  <a href="#" class="like"
-                    ><img src="./assets/img/filter-result/heart.svg" alt=""
-                  /></a>
-                </div>
-                <div class="result__card-body">
-                  <h6 class="result__card-title">
-                    Lee Pucker design. Leather botinki for handsome
-                  </h6>
-                  <span class="result__card-price">$49.50</span>
-                  <p class="result__card-description">
-                    Wordwide shifting available Buyers protection possible!
-                  </p>
-                </div>
-                <div class="result__card-footer">
-                  <div class="result__card-rating">
-                    <ul class="result__card-stars">
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                    </ul>
-                    <span>4.99</span>
-                  </div>
-                  <button class="buy">Купить</button>
-                </div>
-              </div>
-              <div class="result__card">
-                <div class="result__card-head">
-                  <img src="./assets/img/filter-result/1.jpg" alt="" />
-                  <div class="badge hot">HOT</div>
-                  <a href="#" class="like"
-                    ><img src="./assets/img/filter-result/heart.svg" alt=""
-                  /></a>
-                </div>
-                <div class="result__card-body">
-                  <h6 class="result__card-title">
-                    Lee Pucker design. Leather botinki for handsome
-                  </h6>
-                  <span class="result__card-price">$49.50</span>
-                  <p class="result__card-description">
-                    Wordwide shifting available Buyers protection possible!
-                  </p>
-                </div>
-                <div class="result__card-footer">
-                  <div class="result__card-rating">
-                    <ul class="result__card-stars">
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/img/filter-result/star.svg"
-                            alt=""
-                        /></a>
-                      </li>
-                    </ul>
-                    <span>4.99</span>
-                  </div>
-                  <button class="buy">Купить</button>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__logo">
-          <img src="./assets/img/footer/logo.svg" alt="Logo" />
-          <h4 class="footer__title">
-            Адаптивная тема дизайна для Webasyst ShopScript.
-          </h4>
-          <p class="footer__text">
-            Адаптивная тема дизайна для Webasyst ShopScript.
-          </p>
-
-          <button href="#" class="btn text-dark border-violet footer__btn">
-            Написать нам
-          </button>
-        </div>
-        <div class="footer__nav">
-          <ul class="footer__nav-list">
-            <h6 class="footer__subtitle">Основное</h6>
-            <li class="footer__nav-item"><a href="#">Поддержка</a></li>
-            <li class="footer__nav-item"><a href="#">Блог</a></li>
-            <li class="footer__nav-item"><a href="#">Сайт</a></li>
-            <li class="footer__nav-item"><a href="#">Фотопоток</a></li>
-            <li class="footer__nav-item"><a href="#">Магазин</a></li>
-          </ul>
-          <ul class="footer__nav-list">
-            <h6 class="footer__subtitle">Информация</h6>
-            <li class="footer__nav-item"><a href="#">Как сделать заказ</a></li>
-            <li class="footer__nav-item"><a href="#">Условия доставки</a></li>
-            <li class="footer__nav-item"><a href="#">Обмен и возврат</a></li>
-            <li class="footer__nav-item">
-              <a href="#">Условия использования</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#">Как получить скидку</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__contacts">
-          <h6 class="footer__subtitle">Контакты</h6>
-          <a class="footer__phone" href="tel:+080095690099">0 800 956 900 99</a>
-          <a class="footer__phone" href="tel:+080086590066">0 800 865 900 66</a>
-          <div class="footer__address">
-            <span
-              >Пн, Вт, Чт, Пт <br />
-              9:30—23:00
-            </span>
-            <span>Новопаствинск ул.Мира 96</span>
           </div>
         </div>
       </div>
-      <div class="footer__social">
-        <h6 class="footer__subtitle">Социальные сети</h6>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a href=""
-              ><img src="./assets/img/footer/social/twitter.svg" alt="Twitter"
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a href=""
-              ><img
-                src="./assets/img/footer/social/facebook.svg"
-                alt="Facebook"
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a href=""
-              ><img
-                src="./assets/img/footer/social/instagram.svg"
-                alt="Instagram"
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a href=""
-              ><img src="./assets/img/footer/social/youtube.svg" alt="YouTube"
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a href=""
-              ><img src="./assets/img/footer/social/telega.svg" alt="Telegram"
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a href=""
-              ><img
-                src="./assets/img/footer/social/messenger.svg"
-                alt="Messenger"
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a href=""
-              ><img
-                src="./assets/img/footer/social/whatsapp.svg"
-                alt="Whatsapp"
-            /></a>
-          </li>
-          <li class="footer__social-item">
-            <a href=""
-              ><img src="./assets/img/footer/social/skype.svg" alt="Skype"
-            /></a>
-          </li>
-        </ul>
+      <div class="large__wide">
+        <aside class="categories__sidebar">
+          <div class="categories__sidebar-wrapper">
+            <button class="categories__sidebar-btn">
+              <img src="./assets/img/category/filter-variant.svg" alt="" />
+              Ассортимент
+            </button>
+            <div class="categories__total">
+              <a href="#">Все категории<span>Электроника и перефирия</span></a>
+            </div>
+            <ul class="categories__menu-main">
+              <li class="categories__menu-item have__dropdown">
+                <a href="#">Электроника</a>
+                <ul class="categories__menu-dropdown">
+                  <li class="categories__menu-item">
+                    <a href="#">Смартфоны и аксессуары</a>
+                  </li>
+                  <li class="categories__menu-item">
+                    <a href="#">Смартфоны и аксессуары</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__menu-item have__dropdown">
+                <a href="#">Одежда</a>
+                <ul class="categories__menu-dropdown">
+                  <li class="categories__menu-item">
+                    <a href="#">Одежда 1</a>
+                  </li>
+                  <li class="categories__menu-item">
+                    <a href="#">Одежда 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__menu-item have__dropdown">
+                <a href="#">Компьютеры
+                  <span>Планешеты & Сеть</span>
+                  <ul class="categories__menu-dropdown">
+                    <li class="categories__menu-item">
+                      <a href="#">Компьютеры 1</a>
+                    </li>
+                    <li class="categories__menu-item">
+                      <a href="#">Планешеты 2</a>
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class="categories__menu-item have__dropdown">
+                <a href="#">Бытовая техника</a>
+                <ul class="categories__menu-dropdown">
+                  <li class="categories__menu-item">
+                    <a href="#">Бытовая 1</a>
+                  </li>
+                  <li class="categories__menu-item">
+                    <a href="#">техника 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__menu-item have__dropdown">
+                <a href="#">Дом & Сад</a>
+                <ul class="categories__menu-dropdown">
+                  <li class="categories__menu-item">
+                    <a href="#">Дом 1</a>
+                  </li>
+                  <li class="categories__menu-item">
+                    <a href="#">Сад 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__menu-item have__dropdown">
+                <a href="#">Бижутерия</a>
+                <ul class="categories__menu-dropdown">
+                  <li class="categories__menu-item">
+                    <a href="#">Бижутерия 1</a>
+                  </li>
+                  <li class="categories__menu-item">
+                    <a href="#">Бижутерия 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="filter">
+              <form class="filter__box-form">
+                <h3>Фильтр</h3>
+                <div class="input-field">
+                  <select name="price">
+                    <option value="">Цена, руб.</option>
+                    <option value="">Цена, usd.</option>
+                  </select>
+                </div>
+                <div class="input-field">price range</div>
+                <div class="input-field">
+                  <h6 class="acordeon-trigger">Производитель</h6>
+                  <div class="producer accordeon-body">
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      Apple
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      Bang & Olufsen
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      BOSS
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      JBL
+                    </label>
+                  </div>
+                  <h6 class="acordeon-trigger">Мощность</h6>
+                  <div class="producer accordeon-body">
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      Apple
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      Bang & Olufsen
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      BOSS
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      JBL
+                    </label>
+                  </div>
+                  <h6 class="acordeon-trigger">Разьемы</h6>
+                  <div class="producer accordeon-body">
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      Apple
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      Bang & Olufsen
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      BOSS
+                    </label>
+                    <label class="disabled">
+                      <input type="checkbox" name="" />
+                      <span class="checkbox-custom"></span>
+                      JBL
+                    </label>
+                  </div>
+                  <h6 class="acordeon-trigger">Безпроводной интерфес</h6>
+                  <div class="producer accordeon-body">
+                    <ul class="interface__options">
+                      <li><a href="#"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="form-btn reset">Сбросить</button>
+                <button class="form-btn show-result">
+                  Показать <span>25</span> результатов
+                </button>
+              </form>
+            </div>
+          </div>
+        </aside>
+        <article class="categories__filter">
+          <h2 class="categories__title">Цифровая техника</h2>
+          <div class="categories__slider">
+            <div class="categories__slider-item">
+              <img src="./assets/img/category/slider/1.png" alt="" />
+              <h5>Планшеты</h5>
+              <a href="#">125 товаров</a>
+            </div>
+            <div class="categories__slider-item">
+              <img src="./assets/img/category/slider/1.png" alt="" />
+              <h5>Планшеты</h5>
+              <a href="#">125 товаров</a>
+            </div>
+            <div class="categories__slider-item">
+              <img src="./assets/img/category/slider/1.png" alt="" />
+              <h5>Планшеты</h5>
+              <a href="#">125 товаров</a>
+            </div>
+            <div class="categories__slider-item">
+              <img src="./assets/img/category/slider/1.png" alt="" />
+              <h5>Планшеты</h5>
+              <a href="#">125 товаров</a>
+            </div>
+            <div class="categories__slider-item">
+              <img src="./assets/img/category/slider/1.png" alt="" />
+              <h5>Планшеты</h5>
+              <a href="#">125 товаров</a>
+            </div>
+          </div>
+          <div class="categories__sort">
+            <div class="categories__sort-wrapper">
+              <span>СОРТИРОВКА</span>
+              <select class="categories__sort-select" name="" id="">
+                <option value="От дешевых к дорогим">
+                  От дешевых к дорогим
+                </option>
+                <option value="От дешевых к дорогим">От дорогим</option>
+                <option value="От дешевых к дорогим">дешевых</option>
+              </select>
+            </div>
+            <ul class="categories__sort-reflection">
+              <li class="active">
+                <a href="#">
+                  <img src="./assets/img/sort-type/list-layout.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/sort-type/list-layout.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/sort-type/menu.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="categories__filtered">
+            <p>Отфильтровано:</p>
+            <div class="categories__filtered-options">
+              <span class="options-brand">Bang & Olufsen
+                <a href="#"><img src="./assets/img/filtered/pink-cross.svg" alt="" /></a></span>
+              <span class="options-reset">сбросить
+                <a href="#"><img src="./assets/img/filtered/bin.svg" alt="" /></a></span>
+            </div>
+          </div>
+          <ul class="categories__filter-result large__grid result">
+            <li class="buy__card">
+              <div class="buy__card-head">
+                <img src="./assets/img/filter-result/1.jpg" alt="" />
+                <div class="badge hot">HOT</div>
+                <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+              </div>
+              <div class="buy__card-body">
+                <h6 class="buy__card-title">
+                  Lee Pucker design. Leather botinki for handsome
+                </h6>
+                <span class="buy__card-price">$49.50</span>
+                <p class="buy__card-description">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+              <div class="buy__card-footer">
+                <div class="buy__card-rating">
+                  <ul class="buy__card-stars">
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                  </ul>
+                  <span>4.99</span>
+                </div>
+                <button class="buy">Купить</button>
+              </div>
+            </li>
+            <li class="buy__card">
+              <div class="buy__card-head">
+                <img src="./assets/img/filter-result/1.jpg" alt="" />
+                <div class="badge hot">HOT</div>
+                <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+              </div>
+              <div class="buy__card-body">
+                <h6 class="buy__card-title">
+                  Lee Pucker design. Leather botinki for handsome
+                </h6>
+                <span class="buy__card-price">$49.50</span>
+                <p class="buy__card-description">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+              <div class="buy__card-footer">
+                <div class="buy__card-rating">
+                  <ul class="buy__card-stars">
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                  </ul>
+                  <span>4.99</span>
+                </div>
+                <button class="buy">Купить</button>
+              </div>
+            </li>
+            <li class="buy__card">
+              <div class="buy__card-head">
+                <img src="./assets/img/filter-result/1.jpg" alt="" />
+                <div class="badge hot">HOT</div>
+                <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+              </div>
+              <div class="buy__card-body">
+                <h6 class="buy__card-title">
+                  Lee Pucker design. Leather botinki for handsome
+                </h6>
+                <span class="buy__card-price">$49.50</span>
+                <p class="buy__card-description">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+              <div class="buy__card-footer">
+                <div class="buy__card-rating">
+                  <ul class="buy__card-stars">
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                  </ul>
+                  <span>4.99</span>
+                </div>
+                <button class="buy">Купить</button>
+              </div>
+            </li>
+            <li class="buy__card">
+              <div class="buy__card-head">
+                <img src="./assets/img/filter-result/1.jpg" alt="" />
+                <div class="badge hot">HOT</div>
+                <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+              </div>
+              <div class="buy__card-body">
+                <h6 class="buy__card-title">
+                  Lee Pucker design. Leather botinki for handsome
+                </h6>
+                <span class="buy__card-price">$49.50</span>
+                <p class="buy__card-description">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+              <div class="buy__card-footer">
+                <div class="buy__card-rating">
+                  <ul class="buy__card-stars">
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                  </ul>
+                  <span>4.99</span>
+                </div>
+                <button class="buy">Купить</button>
+              </div>
+            </li>
+            <li class="buy__card">
+              <div class="buy__card-head">
+                <img src="./assets/img/filter-result/1.jpg" alt="" />
+                <div class="badge hot">HOT</div>
+                <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+              </div>
+              <div class="buy__card-body">
+                <h6 class="buy__card-title">
+                  Lee Pucker design. Leather botinki for handsome
+                </h6>
+                <span class="buy__card-price">$49.50</span>
+                <p class="buy__card-description">
+                  Wordwide shifting available Buyers protection possible!
+                </p>
+              </div>
+              <div class="buy__card-footer">
+                <div class="buy__card-rating">
+                  <ul class="buy__card-stars">
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                    </li>
+                  </ul>
+                  <span>4.99</span>
+                </div>
+                <button class="buy">Купить</button>
+              </div>
+            </li>
+          </ul>
+        </article>
       </div>
-      <div class="footer__rights">
-        <p>
-          © 2017 - 2020 Epika 2.0 Все права защищены
-          <a href="#">Условия использования</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <img src="./assets/img/footer/logo.svg" alt="Logo" />
+        <h4 class="footer__title">
+          Адаптивная тема дизайна для Webasyst ShopScript.
+        </h4>
+        <p class="footer__text">
+          Адаптивная тема дизайна для Webasyst ShopScript.
         </p>
-        <ul class="footer__colourpicker">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </footer>
 
-    <div class="cart__box">
-      <div class="cart__box-head">
-        <h4 class="cart__box-title">Ваша корзина</h4>
-        <span class="cart__box-count">3 товара</span>
+        <button href="#" class="btn text-dark border-violet footer__btn">
+          Написать нам
+        </button>
       </div>
-      <div class="cart__box-body">
-        <ul class="cart__box-list">
-          <li class="cart__box-item">
-            <figure>
-              <img src="./assets/img/search/2.png" alt="" />
-              <figcaption>
-                <div class="cart__box-row">
-                  <h6 class="cart__box-description">
-                    Безпроводная аккустическа ситема Beoplay M5
-                  </h6>
-                  <a href="" class="cart__box-delete">
-                    <img src="./assets/img/search/bin.svg" alt="" />
-                  </a>
-                </div>
-                <div class="cart__box-row">
-                  <p class="cart__box-price">15 000 руб.</p>
-                  <div class="cart__box-total">
-                    <button
-                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    >
-                      -
-                    </button>
-                    <input
-                      class="total__item-count"
-                      min="0"
-                      name="quantity"
-                      value="1"
-                      type="number"
-                    />
-                    <button
-                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                      class="plus"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
+      <div class="footer__nav">
+        <ul class="footer__nav-list">
+          <h6 class="footer__subtitle">Основное</h6>
+          <li class="footer__nav-item"><a href="#">Поддержка</a></li>
+          <li class="footer__nav-item"><a href="#">Блог</a></li>
+          <li class="footer__nav-item"><a href="#">Сайт</a></li>
+          <li class="footer__nav-item"><a href="#">Фотопоток</a></li>
+          <li class="footer__nav-item"><a href="#">Магазин</a></li>
+        </ul>
+        <ul class="footer__nav-list">
+          <h6 class="footer__subtitle">Информация</h6>
+          <li class="footer__nav-item"><a href="#">Как сделать заказ</a></li>
+          <li class="footer__nav-item"><a href="#">Условия доставки</a></li>
+          <li class="footer__nav-item"><a href="#">Обмен и возврат</a></li>
+          <li class="footer__nav-item">
+            <a href="#">Условия использования</a>
           </li>
-          <li class="cart__box-item">
-            <figure>
-              <img src="./assets/img/search/2.png" alt="" />
-              <figcaption>
-                <div class="cart__box-row">
-                  <h6 class="cart__box-description">
-                    Безпроводная аккустическа ситема Beoplay M5
-                  </h6>
-                  <a href="" class="cart__box-delete">
-                    <img src="./assets/img/search/bin.svg" alt="" />
-                  </a>
-                </div>
-                <div class="cart__box-row">
-                  <p class="cart__box-price">15 000 руб.</p>
-                  <div class="cart__box-total">
-                    <button
-                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    >
-                      -
-                    </button>
-                    <input
-                      class="total__item-count"
-                      min="0"
-                      name="quantity"
-                      value="1"
-                      type="number"
-                    />
-                    <button
-                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                      class="plus"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-              </figcaption>
-            </figure>
+          <li class="footer__nav-item">
+            <a href="#">Как получить скидку</a>
           </li>
         </ul>
-        <div class="cart__box-calculation calculation">
-          <div class="calculation__total">
-            <span>Всего</span>
-            <span class="calculation__total-value">67 000 руб.</span>
-          </div>
-          <div class="calculation__discount">
-            <span>Скидка</span>
-            <span class="calculation__discount-value">- 2 000 руб.</span>
-          </div>
-          <div class="calculation__final">
-            <span>Итого</span>
-            <span class="calculation__final-value">65 000 руб.</span>
-          </div>
-        </div>
-        <button class="cart__box-submit">Оформить заказ</button>
       </div>
-    </div>
-    <div class="search__box">
-      <div class="search__box-head">
-        <div class="search__box-input">
-          <input
-            type="text"
-            name=""
-            id="search"
-            placeholder="НАПИШИ ШОСЬ КУРВА"
-            autofocus
-          />
-          <div class="burger__search">
-            <span></span>
-          </div>
+      <div class="footer__contacts">
+        <h6 class="footer__subtitle">Контакты</h6>
+        <a class="footer__phone" href="tel:+080095690099">0 800 956 900 99</a>
+        <a class="footer__phone" href="tel:+080086590066">0 800 865 900 66</a>
+        <div class="footer__address">
+          <span>Пн, Вт, Чт, Пт <br />
+            9:30—23:00
+          </span>
+          <span>Новопаствинск ул.Мира 96</span>
         </div>
       </div>
     </div>
-    <div class="search__result">
-      <div class="search__box-body">
-        <ul class="search__box-list">
-          <li class="search__box-item">
-            <figure>
-              <img
-                class="search__box-image"
-                src="./assets/img/search/1.png"
-                alt=""
-              />
-              <figcaption>
-                <h6 class="search__box-title">
+    <div class="footer__social">
+      <h6 class="footer__subtitle">Социальные сети</h6>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href=""><img src="./assets/img/footer/social/twitter.svg" alt="Twitter" /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href=""><img src="./assets/img/footer/social/facebook.svg" alt="Facebook" /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href=""><img src="./assets/img/footer/social/instagram.svg" alt="Instagram" /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href=""><img src="./assets/img/footer/social/youtube.svg" alt="YouTube" /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href=""><img src="./assets/img/footer/social/telega.svg" alt="Telegram" /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href=""><img src="./assets/img/footer/social/messenger.svg" alt="Messenger" /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href=""><img src="./assets/img/footer/social/whatsapp.svg" alt="Whatsapp" /></a>
+        </li>
+        <li class="footer__social-item">
+          <a href=""><img src="./assets/img/footer/social/skype.svg" alt="Skype" /></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__rights">
+      <p>
+        © 2017 - 2020 Epika 2.0 Все права защищены
+        <a href="#">Условия использования</a>
+      </p>
+      <ul class="footer__colourpicker">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="cart__box">
+    <div class="cart__box-head">
+      <h4 class="cart__box-title">Ваша корзина</h4>
+      <span class="cart__box-count">3 товара</span>
+    </div>
+    <div class="cart__box-body">
+      <ul class="cart__box-list">
+        <li class="cart__box-item">
+          <figure>
+            <img src="./assets/img/search/2.png" alt="" />
+            <figcaption>
+              <div class="cart__box-row">
+                <h6 class="cart__box-description">
                   Безпроводная аккустическа ситема Beoplay M5
                 </h6>
-                <p class="search__box-price">15 000 руб.</p>
+                <a href="" class="cart__box-delete">
+                  <img src="./assets/img/search/bin.svg" alt="" />
+                </a>
+              </div>
+              <div class="cart__box-row">
+                <p class="cart__box-price">15 000 руб.</p>
+                <div class="cart__box-total">
+                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    -
+                  </button>
+                  <input class="total__item-count" min="0" name="quantity" value="1" type="number" />
+                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                    +
+                  </button>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="cart__box-item">
+          <figure>
+            <img src="./assets/img/search/2.png" alt="" />
+            <figcaption>
+              <div class="cart__box-row">
+                <h6 class="cart__box-description">
+                  Безпроводная аккустическа ситема Beoplay M5
+                </h6>
+                <a href="" class="cart__box-delete">
+                  <img src="./assets/img/search/bin.svg" alt="" />
+                </a>
+              </div>
+              <div class="cart__box-row">
+                <p class="cart__box-price">15 000 руб.</p>
+                <div class="cart__box-total">
+                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                    -
+                  </button>
+                  <input class="total__item-count" min="0" name="quantity" value="1" type="number" />
+                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                    +
+                  </button>
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      <div class="cart__box-calculation calculation">
+        <div class="calculation__total">
+          <span>Всего</span>
+          <span class="calculation__total-value">67 000 руб.</span>
+        </div>
+        <div class="calculation__discount">
+          <span>Скидка</span>
+          <span class="calculation__discount-value">- 2 000 руб.</span>
+        </div>
+        <div class="calculation__final">
+          <span>Итого</span>
+          <span class="calculation__final-value">65 000 руб.</span>
+        </div>
+      </div>
+      <button class="cart__box-submit">Оформить заказ</button>
+    </div>
+  </div>
+  <div class="search__box">
+    <div class="search__box-head">
+      <div class="search__box-input">
+        <input type="text" name="" id="search" placeholder="НАПИШИ ШОСЬ КУРВА" autofocus />
+        <div class="burger__search">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="search__result ">
+    <div class="search__result-mobile">
+      <div class="search__result-body ">
+        <ul class="search__result-list">
+          <li class="search__result-item">
+            <figure>
+              <img class="search__result-image" src="./assets/img/search/1.png" alt="" />
+              <figcaption>
+                <h6 class="search__result-title">
+                  Безпроводная аккустическа ситема Beoplay M5
+                </h6>
+                <p class="search__result-price">15 000 руб.</p>
               </figcaption>
             </figure>
           </li>
-          <li class="search__box-item"></li>
-          <li class="search__box-item"></li>
+          <li class="search__result-item"></li>
+          <li class="search__result-item"></li>
         </ul>
-        <a href="#" class="search__box-more">Все результаты</a>
+        <a href="#" class="search__result-more">Все результаты</a>
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="./assets/js/app.js"></script>
-    <!-- <script src="./assets/js/app2.js"></script> -->
-  </body>
+
+    <div class="search__result-wide">
+      <div class="search__result-main">
+        <h3 class="search__result-title">Результаты поиска</h3>
+        <ul class="search__result-list large__grid">
+          <li class="buy__card">
+            <div class="buy__card-head">
+              <img src="./assets/img/filter-result/1.jpg" alt="" />
+              <div class="badge hot">HOT</div>
+              <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+            </div>
+            <div class="buy__card-body">
+              <h6 class="buy__card-title">
+                Lee Pucker design. Leather botinki for handsome
+              </h6>
+              <span class="buy__card-price">$49.50</span>
+              <p class="buy__card-description">
+                Wordwide shifting available Buyers protection possible!
+              </p>
+            </div>
+            <div class="buy__card-footer">
+              <div class="buy__card-rating">
+                <ul class="buy__card-stars">
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                </ul>
+                <span>4.99</span>
+              </div>
+              <button class="buy">Купить</button>
+            </div>
+          </li>
+          <li class="buy__card">
+            <div class="buy__card-head">
+              <img src="./assets/img/filter-result/1.jpg" alt="" />
+              <div class="badge hot">HOT</div>
+              <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+            </div>
+            <div class="buy__card-body">
+              <h6 class="buy__card-title">
+                Lee Pucker design. Leather botinki for handsome
+              </h6>
+              <span class="buy__card-price">$49.50</span>
+              <p class="buy__card-description">
+                Wordwide shifting available Buyers protection possible!
+              </p>
+            </div>
+            <div class="buy__card-footer">
+              <div class="buy__card-rating">
+                <ul class="buy__card-stars">
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                </ul>
+                <span>4.99</span>
+              </div>
+              <button class="buy">Купить</button>
+            </div>
+          </li>
+          <li class="buy__card">
+            <div class="buy__card-head">
+              <img src="./assets/img/filter-result/1.jpg" alt="" />
+              <div class="badge hot">HOT</div>
+              <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+            </div>
+            <div class="buy__card-body">
+              <h6 class="buy__card-title">
+                Lee Pucker design. Leather botinki for handsome
+              </h6>
+              <span class="buy__card-price">$49.50</span>
+              <p class="buy__card-description">
+                Wordwide shifting available Buyers protection possible!
+              </p>
+            </div>
+            <div class="buy__card-footer">
+              <div class="buy__card-rating">
+                <ul class="buy__card-stars">
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                </ul>
+                <span>4.99</span>
+              </div>
+              <button class="buy">Купить</button>
+            </div>
+          </li>
+          <li class="buy__card">
+            <div class="buy__card-head">
+              <img src="./assets/img/filter-result/1.jpg" alt="" />
+              <div class="badge hot">HOT</div>
+              <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+            </div>
+            <div class="buy__card-body">
+              <h6 class="buy__card-title">
+                Lee Pucker design. Leather botinki for handsome
+              </h6>
+              <span class="buy__card-price">$49.50</span>
+              <p class="buy__card-description">
+                Wordwide shifting available Buyers protection possible!
+              </p>
+            </div>
+            <div class="buy__card-footer">
+              <div class="buy__card-rating">
+                <ul class="buy__card-stars">
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                </ul>
+                <span>4.99</span>
+              </div>
+              <button class="buy">Купить</button>
+            </div>
+          </li>
+          <li class="buy__card">
+            <div class="buy__card-head">
+              <img src="./assets/img/filter-result/1.jpg" alt="" />
+              <div class="badge hot">HOT</div>
+              <a href="#" class="like"><img src="./assets/img/filter-result/heart.svg" alt="" /></a>
+            </div>
+            <div class="buy__card-body">
+              <h6 class="buy__card-title">
+                Lee Pucker design. Leather botinki for handsome
+              </h6>
+              <span class="buy__card-price">$49.50</span>
+              <p class="buy__card-description">
+                Wordwide shifting available Buyers protection possible!
+              </p>
+            </div>
+            <div class="buy__card-footer">
+              <div class="buy__card-rating">
+                <ul class="buy__card-stars">
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="./assets/img/filter-result/star.svg" alt="" /></a>
+                  </li>
+                </ul>
+                <span>4.99</span>
+              </div>
+              <button class="buy">Купить</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="search__ressult-history">
+        <div class="search__history-header">
+          <h4 class="search__history-title">История <br> просмотра</h4>
+          <img class="search__history-logo" src="./assets/img/search/clock.svg" alt="">
+        </div>
+        <ul class="show__list">
+          <li class="show__card">
+            <figure>
+              <img src="./assets/img/cart/shoes.png" alt="">
+              <figcaption>
+                <p class="show__card-description">Кросовки Puma Roadster 2020 Summer</p>
+                <div class="show__price">
+                  <span class="show__price-new">15000</span>
+                  <span class="show__price-old">25 000</span>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="brands__box">
+    <div class="brands__box-body">
+      <ul class="brands__box-list">
+        <li class="brands__box-item">
+          <a href="#" class="brands__box-link">Apple</a>
+        </li>
+        <li class="brands__box-item">
+          <a href="#" class="brands__box-link">Bang&Oulufsen</a>
+        </li>
+        <li class="brands__box-item">
+          <a href="#" class="brands__box-link">Puma</a>
+        </li>
+        <li class="brands__box-item">
+          <a href="#" class="brands__box-link">Nike</a>
+        </li>
+        <li class="brands__box-item">
+          <a href="#" class="brands__box-link">JBL</a>
+        </li>
+        <li class="brands__box-item">
+          <a href="#" class="brands__box-link">Samsung</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <!-- <script src="./assets/js/app2.js"></script> -->
+</body>
+
 </html>

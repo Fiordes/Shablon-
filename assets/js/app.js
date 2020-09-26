@@ -3,19 +3,18 @@ const toggleBox = document.querySelector(".toggle__box");
 const headerBody = document.querySelector(".header__mobile-body");
 
 
+const searchWideButton = document.querySelector('.header__wide-search')
 const searchButton = document.querySelector(".toggle__box-search");
 const searchBox = document.querySelector(".search__box");
 const searchResult = document.querySelector(".search__result");
 const burgerSearch = document.querySelector(".burger__search");
 
 const cartButton = document.querySelector(".toggle__box-cart");
+const cartWideButton = document.querySelector(".header__wide-cart");
 const cartBox = document.querySelector(".cart__box");
-
 
 const brandButton = document.querySelector(".brands__trigger");
 const brandBox = document.querySelector(".brands__box");
-
-
 
 const subTriggers = document.querySelectorAll(".have__sub");
 const subMenus = document.querySelectorAll(".header__mobile-submenu");
@@ -24,73 +23,60 @@ const subMenusLinks = document.querySelectorAll(
   ".header__mobile-submenu .header__mobile-link"
 );
 
-
-const headSearchInput = document.querySelector('#search');
-
-
-
+const headSearchInput = document.querySelector("#search");
 
 // Dark theme
 const darkThemeTrigger = document.querySelector(".header__mobile-theme");
 const darkThemeTriggerLink = document.querySelector(".header__mobile-theme a");
 
 function changeTheme() {
-  document.body.classList.toggle('dark');
-  if (document.body.classList.contains('dark')) {
+  document.body.classList.toggle("dark");
+  if (document.body.classList.contains("dark")) {
     darkThemeTriggerLink.innerHTML = ` <a href="#">
                                           <img src="./assets/img/mobile-nav/night.svg" alt="sun" />
                                           Ночь
-                                        </a>`
-
+                                        </a>`;
   } else {
     darkThemeTriggerLink.innerHTML = ` <a href="#">
                                           <img src="./assets/img/mobile-nav/sun.svg" alt="sun" />
                                           День
-                                        </a>`
-
+                                        </a>`;
   }
 }
 
-darkThemeTrigger.addEventListener('click', (e) => {
-  e.preventDefault()
+darkThemeTrigger.addEventListener("click", (e) => {
+  e.preventDefault();
   changeTheme();
-
-})
-
-
+});
 
 // FILTER INPUTS
 
-const filterInputs = document.querySelectorAll('.filter__box input');
+const filterInputs = document.querySelectorAll(".filter__box input");
 
-filterInputs.forEach(input => {
+filterInputs.forEach((input) => {
   let label = input.parentNode;
-  input.addEventListener('click', function () {
-    label.classList.toggle('disabled')
-  })
-})
+  input.addEventListener("click", function () {
+    label.classList.toggle("disabled");
+  });
+});
 
 // FILTER ACCORDEON
 
-const accordeonTrigger = document.querySelectorAll('.acordeon-trigger');
-const accordeonBody = document.querySelectorAll('.acordeon-body');
+const accordeonTrigger = document.querySelectorAll(".acordeon-trigger");
+const accordeonBody = document.querySelectorAll(".acordeon-body");
 
-
-accordeonTrigger.forEach(trigger => {
+accordeonTrigger.forEach((trigger) => {
   let nextBlock = trigger.nextElementSibling;
-  trigger.classList.remove('sm');
+  trigger.classList.remove("sm");
   // accordeonBody.forEach(body => body.classList.remove('open'))
 
+  trigger.addEventListener("click", function () {
+    accordeonBody.forEach((body) => body.classList.remove("open"));
 
-  trigger.addEventListener('click', function () {
-    accordeonBody.forEach(body => body.classList.remove('open'))
-
-    trigger.classList.toggle('sm');
-    nextBlock.classList.toggle('open');
-  })
-})
-
-
+    trigger.classList.toggle("sm");
+    nextBlock.classList.toggle("open");
+  });
+});
 
 const backButtons = document.querySelectorAll(".back");
 
@@ -151,7 +137,7 @@ cartBoxTrigger.fromTo(
     y: "100%",
     display: "none",
   }, {
-    y: "12%",
+    y: "5%",
     display: "grid",
   }
 );
@@ -171,7 +157,6 @@ brandsBoxTrigger.fromTo(
 );
 brandsBoxTrigger.pause();
 
-
 // Mobile header Move
 
 let mobileHeaderMove = new gsap.timeline();
@@ -186,9 +171,6 @@ mobileHeaderMove.fromTo(
 );
 mobileHeaderMove.pause();
 
-
-
-
 burgerMenu.addEventListener("click", function () {
   burgerMenu.classList.toggle("active");
   toggleBox.classList.toggle("switch");
@@ -196,7 +178,7 @@ burgerMenu.addEventListener("click", function () {
   cartBox.classList.remove("visible");
   mobileHead.classList.toggle("open");
 
-  lockBody();
+  // lockBody();
   menuTrigger.play();
 
   if (!headerBody.classList.contains("open")) {
@@ -220,14 +202,25 @@ searchButton.addEventListener("click", function (el) {
   headerBody.classList.remove("open");
 });
 
+searchWideButton.addEventListener("click", function (el) {
+  el.stopPropagation();
+  // searchBoxTrigger.play();
+  menuTrigger.reverse();
+  // mobileHeaderMove.play();
+  searchResultTrigger.play();
+
+  burgerSearch.classList.toggle("active");
+  burgerMenu.classList.remove("active");
+  headerBody.classList.remove("open");
+});
+
 burgerSearch.addEventListener("click", function () {
   mobileHeaderMove.reverse();
   searchBoxTrigger.reverse();
   searchResultTrigger.reverse();
   toggleBox.classList.toggle("switch");
   burgerSearch.classList.toggle("active");
-  brandsBoxTrigger.reverse()
-
+  brandsBoxTrigger.reverse();
 });
 
 cartButton.addEventListener("click", function (el) {
@@ -243,14 +236,18 @@ cartButton.addEventListener("click", function (el) {
   }
 });
 
-if (brandButton) {
-  brandButton.addEventListener('click', function (el) {
-    el.stopPropagation();
-    brandsBoxTrigger.play()
-    mobileHeaderMove.play();
-    searchBoxTrigger.play()
-    menuTrigger.reverse();
+cartWideButton.addEventListener("click", function (el) {
+  el.stopPropagation();
+  cartBoxTrigger.play();
+});
 
+if (brandButton) {
+  brandButton.addEventListener("click", function (el) {
+    el.stopPropagation();
+    brandsBoxTrigger.play();
+    mobileHeaderMove.play();
+    searchBoxTrigger.play();
+    menuTrigger.reverse();
 
     // let elPlaceholder = brandButton.dataset.placeholder;
     // let inputPlaceholder = headSearchInput.dataset.placeholder;
@@ -262,14 +259,11 @@ if (brandButton) {
     //   headSearchInput.placeholder = elPlaceholder;
     // }
 
-
-
     burgerSearch.classList.toggle("active");
     burgerMenu.classList.remove("active");
     headerBody.classList.remove("open");
-  })
+  });
 }
-
 
 subTriggers.forEach((trigger) => {
   let nextSub = trigger.lastChild.previousSibling;
@@ -321,27 +315,24 @@ backButtons.forEach((btn) => {
   });
 });
 
-
-
-const categoryMenu = document.querySelectorAll('.have__dropdown');
-const categoryDropdown = document.querySelectorAll('.categories__menu-dropdown');
-const categoryTotalItem = document.querySelector('.categories__total');
-
+const categoryMenu = document.querySelectorAll(".have__dropdown");
+const categoryDropdown = document.querySelectorAll(
+  ".categories__menu-dropdown"
+);
+const categoryTotalItem = document.querySelector(".categories__total");
 
 if (categoryTotalItem) {
-  categoryTotalItem.addEventListener('click', () => {
-    categoryTotalItem.nextElementSibling.classList.toggle('open');
-  })
-
+  categoryTotalItem.addEventListener("click", () => {
+    categoryTotalItem.nextElementSibling.classList.toggle("open");
+  });
 }
 categoryMenu.forEach((item) => {
-  item.addEventListener('click', function (e) {
-    e.preventDefault()
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
 
     categoryDropdown.forEach((dropdown) => {
-      dropdown.classList.remove('open')
-    })
-
+      dropdown.classList.remove("open");
+    });
 
     // if (item.classList.contains('rotate')) {
     //   item.classList.remove('rotate')
@@ -350,25 +341,21 @@ categoryMenu.forEach((item) => {
 
     // }
 
+    let closeUl = item.lastElementChild;
 
-    let closeUl = item.lastElementChild
-
-    if (closeUl.classList.contains('categories__menu-dropdown')) {
-      closeUl.classList.toggle('open')
-
+    if (closeUl.classList.contains("categories__menu-dropdown")) {
+      closeUl.classList.toggle("open");
     }
-
-  })
-})
-
+  });
+});
 
 // Tabs in cart
 
-const newTab = document.querySelector('.tab__new');
-const newTabTrigger = document.querySelector('#new-tab-trigger');
+const newTab = document.querySelector(".tab__new");
+const newTabTrigger = document.querySelector("#new-tab-trigger");
 
-const authTab = document.querySelector('.tab__auth');
-const authTabTrigger = document.querySelector('#auth-tab-trigger');
+const authTab = document.querySelector(".tab__auth");
+const authTabTrigger = document.querySelector("#auth-tab-trigger");
 
 let newTabSwitch = new gsap.timeline();
 
@@ -378,7 +365,6 @@ newTabSwitch.fromTo(
     x: 0,
     opacity: 1,
     // display: 'block'
-
   }, {
     x: "-100%",
     opacity: 0,
@@ -399,32 +385,24 @@ authTabSwitch.fromTo(
     x: "-100%",
     opacity: 1,
     // display: 'block'
-
   }
 );
 authTabSwitch.pause();
 
+if (newTab) {
+  newTabTrigger.addEventListener("click", function (e) {
+    newTabTrigger.classList.add("current");
+    authTabTrigger.classList.remove("current");
+    e.preventDefault();
+    newTabSwitch.reverse();
+    authTabSwitch.reverse();
+  });
 
-
-
-
-
-
-
-newTabTrigger.addEventListener('click', function (e) {
-
-  newTabTrigger.classList.add('current')
-  authTabTrigger.classList.remove('current')
-  e.preventDefault();
-  newTabSwitch.reverse()
-  authTabSwitch.reverse()
-})
-
-authTabTrigger.addEventListener('click', function (e) {
-  e.preventDefault();
-  newTabTrigger.classList.remove('current')
-  authTabTrigger.classList.add('current')
-  newTabSwitch.play();
-  authTabSwitch.play()
-
-})
+  authTabTrigger.addEventListener("click", function (e) {
+    e.preventDefault();
+    newTabTrigger.classList.remove("current");
+    authTabTrigger.classList.add("current");
+    newTabSwitch.play();
+    authTabSwitch.play();
+  });
+}

@@ -7,6 +7,7 @@
     top: 0;
     right: 0;
     left: 0;
+
   }
 
   &-head {
@@ -81,6 +82,7 @@
 
   &-logo {
     margin-right: 30px;
+
     @include media(wide) {
       margin-right: 68px;
     }
@@ -121,6 +123,7 @@
     margin-left: auto;
 
     a {
+
       &:nth-child(2),
       &:nth-child(3) {
         margin-right: 20px;
@@ -135,6 +138,7 @@
     line-height: 22px;
     letter-spacing: 0.1px;
     color: #282828;
+
     @include media(wide) {
       margin-right: 112px;
     }

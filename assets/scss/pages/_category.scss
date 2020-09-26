@@ -396,7 +396,7 @@
 
             @include media(desktop) {
                 grid-template-columns: repeat(4, minmax(100px, 244px));
-                grid-column-gap: 20px;
+                grid-column-gap: 0;
                 grid-row-gap: 16px;
             }
         }
@@ -551,13 +551,7 @@
                     height: 10px;
                 }
 
-                // li {
-                //     margin-right: 3px;
 
-                //     &:last-of-type {
-                //         margin-right: 0;
-                //     }
-                // }
             }
         }
     }

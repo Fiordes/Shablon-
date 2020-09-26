@@ -29,9 +29,7 @@ header {
     transition: all 0.5s;
 
 
-    &.open {
-      background: #fff;
-    }
+
 
     .cart__box {
       display: none;
@@ -88,6 +86,12 @@ header {
     overflow-x: hidden;
     overflow-y: auto;
     background: #ffffff;
+
+
+    &.open {
+      height: 1000px;
+
+    }
   }
 
   &-subtitle {
@@ -103,20 +107,28 @@ header {
 
     &.more__list {
       .header__mobile-item {
-        position: relative;
 
-        &::after {
-          content: "";
-          display: block;
-          width: 15px;
-          height: 15px;
-          background-image: url("/assets/img/mobile-nav/more-horizontal.svg");
-          background-size: cover;
-          position: absolute;
-          top: 50%;
-          right: 0;
-          transform: translateY(-50%);
+        a {
+          position: relative;
+          width: 100%;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-image: url("/assets/img/mobile-nav/more-horizontal.svg");
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+          }
         }
+
+        // position: relative;
+
+
       }
     }
   }

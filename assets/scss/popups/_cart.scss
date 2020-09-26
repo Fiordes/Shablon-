@@ -12,15 +12,11 @@
     @include media(desktop) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 30px;
+        grid-column-gap: 0;
         padding: 32px;
     }
 
-    // &.visible {
-    //     .cart__box-body {
-    //         // height: 100vh;
-    //     }
-    // }
+
 
     &-r {
         display: none;
@@ -457,6 +453,10 @@
             letter-spacing: -0.05em;
             margin-right: 20px;
             color: $colour-text-main;
+
+            &.current {
+                color: $colour-text-pink;
+            }
         }
     }
 
@@ -478,7 +478,7 @@
             &-contacts,
             &-delivery {
                 display: grid;
-                grid-template-columns: repeat(2, minmax(290px, 304px));
+                grid-template-columns: repeat(2, minmax(288px, 1fr));
                 grid-gap: 32px;
                 margin-bottom: 32px;
             }
