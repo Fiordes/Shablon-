@@ -193,13 +193,10 @@ body.dark {
 
     // SEARCH RESULT BOX
     .search__result-title,
-    .search__history-header {
-        color: #f0f0f0;
-
-    }
-
+    .search__history-header,
     .buy__card-price {
         color: #f0f0f0;
+
     }
 
     .buy__card-rating {
@@ -214,6 +211,34 @@ body.dark {
         color: $colour-text-main;
     }
 
+    .reg__box {
+        background: #252525;
+
+        &-title {
+            color: #cacaca;
+        }
+
+        input {
+            &::placeholder {
+                color: #cacaca;
+            }
+        }
+
+        button.bg-gray {
+            background: #5F5F5F;
+            color: #f0f0f0;
+        }
+
+        .btn-box {
+            button {
+                color: #FFA654;
+
+                &:last-of-type {
+                    color: #4AD4FF;
+                }
+            }
+        }
+    }
 
 
 

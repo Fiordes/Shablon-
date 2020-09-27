@@ -11,7 +11,73 @@
   <link rel="stylesheet" href="./assets/scss/main.css" />
 </head>
 
-<body class="dark">
+<body class="">
+
+  <div class="myorder__box">
+    <div class="myorder__mobile">
+      <h2 class="main__title">Мои <br> Заказы</h2>
+      <div class="myorder__sort-wrapper">
+        <input type="text" class="myorder__sort-input" placeholder="Cортировать">
+      </div>
+      <ul class='myorder__list'>
+        <li class="myorder__list-item order status-new">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+        <li class="myorder__list-item order status-new">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+        <li class="myorder__list-item order status-paid">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+        <li class="myorder__list-item order status-done">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+        <li class="myorder__list-item order status-done">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
   <header class="header">
     <nav class="header__mobile-nav">
       <div class="header__mobile-head">
@@ -291,15 +357,22 @@
             <a href="#" class="header__mobile-link">
               Тема дизайна для ShopScript
             </a>
+            <img src="./assets/img/mobile-nav/more-horizontal.svg" alt="">
+
           </li>
           <li class="header__mobile-item">
             <a href="#" class="header__mobile-link"> Установка темы </a>
+            <img src="./assets/img/mobile-nav/more-horizontal.svg" alt="">
           </li>
           <li class="header__mobile-item">
             <a href="#" class="header__mobile-link"> Типографика </a>
+            <img src="./assets/img/mobile-nav/more-horizontal.svg" alt="">
+
           </li>
           <li class="header__mobile-item">
             <a href="#" class="header__mobile-link"> Контракт </a>
+            <img src="./assets/img/mobile-nav/more-horizontal.svg" alt="">
+
           </li>
         </ul>
 
@@ -320,14 +393,20 @@
         <ul class="header__mobile-list more__list">
           <li class="header__mobile-item">
             <a href="#" class="header__mobile-link"> Мои заказы </a>
+            <img src="./assets/img/mobile-nav/more-horizontal.svg" alt="">
+
           </li>
           <li class="header__mobile-item">
             <a href="#" class="header__mobile-link">
               Прогирамма лояльности
             </a>
+            <img src="./assets/img/mobile-nav/more-horizontal.svg" alt="">
+
           </li>
           <li class="header__mobile-item">
             <a href="#" class="header__mobile-link"> Мой профиль </a>
+            <img src="./assets/img/mobile-nav/more-horizontal.svg" alt="">
+
           </li>
         </ul>
         <div class="header__mobile-theme">
@@ -1710,10 +1789,10 @@
           <div class="tab__auth">
             <form class="tab__new-form tab__forms">
               <div class="tab__forms-contacts">
-                <input type="text" placeholder="Ваше имя">
-                <input type="tel" placeholder="Ваш телефон">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="* * * *">
 
-                <input type="text" placeholder="Ваша фамилия">
+                <button>Войти</button>
               </div>
               <h3>ZASTAVKA</h3>
               <div class="tab__forms-delivery">
@@ -2041,6 +2120,27 @@
 
       </ul>
 
+    </div>
+  </div>
+
+
+
+  <div class="reg__box">
+    <div class="reg__box-wrapper">
+      <h2 class="reg__box-title">Авторизация</h2>
+
+      <form class="reg__box-form form">
+        <input class="form-input" placeholder="Email" type="email">
+        <input class="form-input" placeholder="*****" type="password">
+
+
+        <button class="form-btn bg-pink text-white">Войти</button>
+        <button class="form-btn bg-gray text-gray">Регистрация</button>
+        <div class="btn-box">
+          <button class="btn bg-gray google-btn">Google+</button>
+          <button class="btn bg-gray facebook-btn">Facebook</button>
+        </div>
+      </form>
     </div>
   </div>
 

@@ -107,28 +107,17 @@ header {
 
     &.more__list {
       .header__mobile-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-        a {
-          position: relative;
-          width: 100%;
-
-          &::after {
-            content: "";
-            display: block;
-            width: 15px;
-            height: 15px;
-            background-image: url("/assets/img/mobile-nav/more-horizontal.svg");
-            background-size: cover;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-          }
+        img {
+          margin-right: 0;
         }
 
-        // position: relative;
-
-
+        a {
+          width: 100%;
+        }
       }
     }
   }

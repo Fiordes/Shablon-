@@ -119,6 +119,9 @@ searchBoxTrigger.fromTo(
 );
 
 searchBoxTrigger.pause();
+// check window size
+
+
 
 let searchResultTrigger = new gsap.timeline();
 searchResultTrigger.fromTo(
@@ -127,7 +130,17 @@ searchResultTrigger.fromTo(
     y: "100%",
     display: "none",
   }, {
-    y: "29%",
+    // y: percentage,
+    y: () => {
+      let percentage = '';
+      if (window.innerWidth < 1024) {
+        percentage = "16%"
+      } else {
+        percentage = '8%'
+      }
+      return percentage
+    },
+
     display: "block",
   }
 );

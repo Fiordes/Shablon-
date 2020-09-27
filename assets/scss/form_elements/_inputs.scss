@@ -1,0 +1,13 @@
+input.form-input {
+    border: 1px solid #F0F0F0;
+    border-radius: 8px;
+    background: transparent;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 16px;
+    width: 100%;
+
+
+    &::placeholder {}
+}
