@@ -9,5 +9,11 @@ input.form-input {
     width: 100%;
 
 
-    &::placeholder {}
+    &::placeholder {
+        color: #282828;
+    }
+
+    &:disabled {
+        border: none;
+    }
 }

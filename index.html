@@ -13,71 +13,32 @@
 
 <body class="">
 
-  <div class="myorder__box">
-    <div class="myorder__mobile">
-      <h2 class="main__title">Мои <br> Заказы</h2>
-      <div class="myorder__sort-wrapper">
-        <input type="text" class="myorder__sort-input" placeholder="Cортировать">
+  <div class="profile">
+    <div class="profile__box">
+      <div class="profile__box-head">
+        <h2 class="main__title">
+          Мой <br> Профиль
+        </h2>
+        <img src="./assets/img/avatar.png" alt="" class="profile__avatar">
       </div>
-      <ul class='myorder__list'>
-        <li class="myorder__list-item order status-new">
-          <div class="order__description">
-            <a class="order__number" href="#">#1003</a>
-            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+      <form class="profile__box-form">
+        <input class="form-input" disabled type="text" placeholder="Дональд">
+        <input class="form-input" disabled type="text" placeholder="Мамп">
+        <input class="form-input" disabled type="email" placeholder="donald@epika.com">
+        <input class="form-input" disabled type="tel" placeholder="(777) 888-99-00">
+        <div class="profile__box-change">
+          <button class="text-white form-btn bg-pink">Редактировать</button>
+          <div class="btns-box">
+            <button class="btn bg-pink text-white">Сохранить</button>
+            <button class="btn bg-gray text-gray">Отмена</button>
           </div>
-          <div class="order__date">
-            <span>
-              3 сентября 2019
-            </span>
-          </div>
-        </li>
-        <li class="myorder__list-item order status-new">
-          <div class="order__description">
-            <a class="order__number" href="#">#1003</a>
-            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
-          </div>
-          <div class="order__date">
-            <span>
-              3 сентября 2019
-            </span>
-          </div>
-        </li>
-        <li class="myorder__list-item order status-paid">
-          <div class="order__description">
-            <a class="order__number" href="#">#1003</a>
-            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
-          </div>
-          <div class="order__date">
-            <span>
-              3 сентября 2019
-            </span>
-          </div>
-        </li>
-        <li class="myorder__list-item order status-done">
-          <div class="order__description">
-            <a class="order__number" href="#">#1003</a>
-            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
-          </div>
-          <div class="order__date">
-            <span>
-              3 сентября 2019
-            </span>
-          </div>
-        </li>
-        <li class="myorder__list-item order status-done">
-          <div class="order__description">
-            <a class="order__number" href="#">#1003</a>
-            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
-          </div>
-          <div class="order__date">
-            <span>
-              3 сентября 2019
-            </span>
-          </div>
-        </li>
-      </ul>
+        </div>
+
+      </form>
+
     </div>
   </div>
+
   <header class="header">
     <nav class="header__mobile-nav">
       <div class="header__mobile-head">
@@ -2122,7 +2083,71 @@
 
     </div>
   </div>
-
+  <div class="myorder__box">
+    <div class="myorder__mobile">
+      <h2 class="main__title">Мои <br> Заказы</h2>
+      <div class="myorder__sort-wrapper">
+        <input type="text" class="myorder__sort-input" placeholder="Cортировать">
+      </div>
+      <ul class='myorder__list'>
+        <li class="myorder__list-item order status-new">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+        <li class="myorder__list-item order status-new">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+        <li class="myorder__list-item order status-paid">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+        <li class="myorder__list-item order status-done">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+        <li class="myorder__list-item order status-done">
+          <div class="order__description">
+            <a class="order__number" href="#">#1003</a>
+            <p class="order__details">7 товаров на сумму 65 000 руб.</p>
+          </div>
+          <div class="order__date">
+            <span>
+              3 сентября 2019
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
 
   <div class="reg__box">
@@ -2146,7 +2171,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="./assets/js/app.js"></script>
-  <!-- <script src="./assets/js/app2.js"></script> -->
+  <script src="./assets/js/profile.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,47 @@
+.profile {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    background: #ffffff;
+
+    &__box {
+
+        padding: 32px;
+
+        &-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        &-form {}
+
+        input {
+            margin-bottom: 16px;
+
+            &:last-of-type {
+                margin-bottom: 40px;
+            }
+        }
+
+        &-change {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .btns-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            right: -100%;
+            top: 0;
+        }
+    }
+}

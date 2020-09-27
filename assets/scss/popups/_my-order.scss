@@ -1,148 +1,137 @@
 .myorder {
-    &__box {}
+  &__box {
+    display: none;
+  }
 
-    &__mobile {
-        padding: 32px;
+  &__mobile {
+    padding: 32px;
 
-        .main__title {
-            margin-bottom: 16px;
-        }
+    .main__title {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__sort {
+    &-wrapper {
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        background-image: url("../../assets/img/cart/select-down.svg");
+      }
     }
 
+    &-input {
+      margin-bottom: 28px;
+      width: 100%;
+      padding: 16px;
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+    }
+  }
 
+  &__list {
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      /* Shadow02 */
 
+      box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      padding: 19px 21px 20px 42px;
+      position: relative;
+      margin-bottom: 16px;
 
-    &__sort {
-        &-wrapper {
-            position: relative;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
 
-            &:after {
-                content: '';
-                display: block;
-                width: 15px;
-                height: 15px;
-                position: absolute;
-                right: 16px;
-                top: 16px;
-                background-image: url('../../assets/img/cart/select-down.svg');
-            }
+      &:before {
+        content: "";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: -0.05em;
+        color: #ffffff;
+        width: 96px;
+        height: 26px;
+        transform: rotate(-90deg);
+        position: absolute;
+
+        top: 35px;
+        left: -35px;
+        border-radius: 8px 8px 0 0;
+      }
+
+      &.status-new {
+        &::before {
+          content: "новый";
+          background: #229218;
         }
+      }
 
-
-
-        &-input {
-            margin-bottom: 28px;
-            width: 100%;
-            padding: 16px;
-            border: 1px solid #F0F0F0;
-            border-radius: 8px;
+      &.status-paid {
+        &::before {
+          content: "оплачен";
+          background: #ef4632;
         }
+      }
+
+      &.status-done {
+        &::before {
+          content: "выполнен";
+          background: #5b4396;
+        }
+      }
     }
 
-    &__list {
+    .order {
+      &__description {
+        max-width: 105px;
+      }
 
-        &-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #FFFFFF;
-            /* Shadow02 */
+      &__number {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+        letter-spacing: -0.05em;
+        margin-bottom: 8px;
+        color: $colour-text-main;
+        display: inline-block;
+      }
 
-            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-            padding: 19px 21px 20px 42px;
-            position: relative;
-            margin-bottom: 16px;
+      &__details {
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: -0.05em;
 
-            &:last-of-type {
-                margin-bottom: 0;
-            }
+        color: #9c9c9c;
+      }
 
-            &:before {
-                content: '';
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 17px;
-                letter-spacing: -0.05em;
-                color: #ffffff;
-                width: 96px;
-                height: 26px;
-                transform: rotate(-90deg);
-                position: absolute;
+      &__date {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.05em;
+        max-width: 69px;
 
-                top: 35px;
-                left: -35px;
-                border-radius: 8px 8px 0 0;
-            }
-
-            &.status-new {
-                &::before {
-                    content: 'новый';
-                    background: #229218;
-
-                }
-            }
-
-            &.status-paid {
-                &::before {
-                    content: 'оплачен';
-                    background: #EF4632;
-
-                }
-            }
-
-            &.status-done {
-                &::before {
-                    content: 'выполнен';
-                    background: #5B4396;
-
-                }
-            }
+        span {
+          display: flex;
+          align-items: center;
+          text-align: right;
         }
-
-        .order {
-
-            &__description {
-                max-width: 105px;
-            }
-
-            &__number {
-                font-size: 20px;
-                line-height: 24px;
-                font-weight: bold;
-                letter-spacing: -0.05em;
-                margin-bottom: 8px;
-                color: $colour-text-main;
-                display: inline-block;
-            }
-
-            &__details {
-                font-size: 10px;
-                line-height: 12px;
-                letter-spacing: -0.05em;
-
-                color: #9C9C9C;
-            }
-
-            &__date {
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 120%;
-                letter-spacing: -0.05em;
-                max-width: 69px;
-
-                span {
-                    display: flex;
-                    align-items: center;
-                    text-align: right;
-                }
-
-            }
-        }
-
+      }
     }
-
+  }
 }
