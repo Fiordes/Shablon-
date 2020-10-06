@@ -1,0 +1,117 @@
+.categories__breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0 30px;
+
+    &-item {
+        padding: 4px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-right: 24px;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background: url('../../assets/img/category/arrow-right-small.svg') no-repeat 50% 50%;
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        &:hover {
+            background: rgba(255, 63, 92, 0.96);
+            box-shadow: 7px -7px 21px rgba(0, 0, 0, 0.09), 3px 0px 24px rgba(0, 0, 0, 0.06);
+            border-radius: 8px 8px 0px 0px;
+
+            .categories__breadcrumbs-link {
+                color: #ffffff;
+            }
+
+            &>ul {
+                height: fit-content;
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+
+
+    &-link {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 16px;
+        text-decoration: none;
+        color: #5F5F5F;
+
+        &.main {
+            color: $colour-text-pink;
+        }
+
+        &.current {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+
+    .categories__dropdown {
+        position: absolute;
+        top: 24px;
+        left: 0;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0px 17px 21px rgba(0, 0, 0, 0.06), 14px -10px 30px rgba(0, 0, 0, 0.06);
+        border-radius: 0px 8px 8px 8px;
+        padding: 16px 14px;
+
+        &-item {
+            margin-bottom: 13px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+
+        }
+
+        &-link {
+            font-size: 13px;
+            line-height: 16px;
+            color: #5f5f5f;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+
+                text-decoration: underline;
+                color: $colour-text-pink;
+
+            }
+        }
+    }
+
+
+
+}
