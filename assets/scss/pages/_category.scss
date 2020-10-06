@@ -71,12 +71,12 @@
             }
         }
 
-        h3 {
-            font-size: 20px;
-            line-height: 150%;
-            margin-bottom: 14px;
-            margin-right: 22px;
-        }
+        // h3 {
+        //     font-size: 20px;
+        //     line-height: 150%;
+        //     margin-bottom: 14px;
+        //     margin-right: 22px;
+        // }
     }
 
     &__total {
@@ -366,6 +366,7 @@
                 background: #F0F0F0;
                 border-radius: 8px;
                 padding: 8px 16px;
+                width: fit-content;
 
                 img {
                     margin-left: 8px;
@@ -387,6 +388,7 @@
         &-result {
             display: grid;
             grid-row-gap: 32px;
+            margin-bottom: 32px;
 
             &.grid-two {
                 grid-template-columns: repeat(2, minmax(120px, 144px));
@@ -394,11 +396,26 @@
             }
 
 
+
+            &.grig-solo {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            &.grid-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: column;
+
+            }
+
             @include media(desktop) {
                 grid-template-columns: repeat(4, minmax(100px, 244px));
                 grid-column-gap: 0;
                 grid-row-gap: 16px;
+                margin-bottom: 0;
             }
+
         }
 
 
@@ -409,9 +426,6 @@
         &.grid-two {
             .result__card {
                 &-head {
-
-
-
                     .badge {
                         top: 12px;
                         left: 12px;
@@ -444,12 +458,7 @@
             }
 
             @include media(desktop) {
-
-
-
-
                 max-width: 244px;
-
             }
 
             &-head {

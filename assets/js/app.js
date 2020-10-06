@@ -166,10 +166,10 @@ let brandsBoxTrigger = new gsap.timeline();
 brandsBoxTrigger.fromTo(
   brandBox,
   0.2, {
-    y: "80%",
+    y: "100%",
     display: "none",
   }, {
-    y: "15%",
+    y: "5%",
     display: "block",
   }
 );

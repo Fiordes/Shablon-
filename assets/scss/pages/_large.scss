@@ -288,7 +288,10 @@
 
             h6 {
                 margin-bottom: 5px;
-                height: 48px;
+                font-size: 20px;
+                line-height: 150%;
+                letter-spacing: 0.0075em;
+                color: rgba(0, 0, 0, 0.87);
             }
 
             p {
@@ -602,6 +605,12 @@
                 align-items: center;
                 letter-spacing: 0.1px;
                 margin-bottom: 5px;
+            }
+
+            &-date {
+                font-size: 11px;
+                line-height: 13px;
+                letter-spacing: 0.1px;
             }
         }
     }

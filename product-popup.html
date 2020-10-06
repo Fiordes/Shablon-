@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+</head>
+
+<body>
+    <div class="product__box">
+        <div class="product__box-wrapper">
+            <div class="product__box-presentation">
+                <div class="carousel">CAROUSEL</div>
+            </div>
+            <div class="product__box-description">
+                <div class="product__box-name">
+                    <span>НАУШНИКИ ВНУТРИКАНАЛЬНЫЕ</span>
+                    <h2>Beoplay H3</h2>
+                </div>
+                <div class="product__box-row">
+                    <div class="product__rating">
+                        <ul class="product__stars">
+                            <li><img src="./assets/img/star.svg" alt="" /></li>
+                            <li><img src="./assets/img/star.svg" alt="" /></li>
+                            <li><img src="./assets/img/star.svg" alt="" /></li>
+                            <li><img src="./assets/img/star.svg" alt="" /></li>
+                            <li><img src="./assets/img/star.svg" alt="" /></li>
+                        </ul>
+
+                        <span>4.99 / 5</span>
+                    </div>
+                    <a href="#" class="product__reviews"> 12 отзывов </a>
+                </div>
+                <div class="product__box-row">
+                    <div class="product__colours product__options">
+                        <h5>ЦВЕТ</h5>
+                        <label class="colour">
+                            <input type="radio" name="colour" id="" data-colour="#000000" />
+                        </label>
+                        <label class="colour">
+                            <input type="radio" name="colour" id="" data-colour="#D6D2D0" />
+                        </label>
+                        <label class="colour">
+                            <input type="radio" name="colour" id="" data-colour="#39D0AE" />
+                        </label>
+                        <label class="colour">
+                            <input type="radio" name="colour" id="" data-colour="#FF3F5C" />
+                        </label>
+                    </div>
+                    <div class="product__sizes product__options">
+                        <h5>РАЗМЕР</h5>
+                        <label class="size">
+                            <input type="radio" name="size" id="" data-size="XS" />
+                            XS
+                        </label>
+                        <label class="size">
+                            <input type="radio" name="size" id="" data-size="S" />
+                            S
+                        </label>
+                        <label class="size">
+                            <input type="radio" name="size" id="" data-size="L" />
+                            L
+                        </label>
+                        <label class="size">
+                            <input type="radio" name="size" id="" data-size="M" />
+                            M
+                        </label>
+                        <label class="size">
+                            <input type="radio" name="size" id="" data-size="XL" />
+                            XL
+                        </label>
+                        <label class="size">
+                            <input type="radio" name="size" id="" data-size="XXL" />
+                            XXL
+                        </label>
+                    </div>
+                </div>
+                <div class="product__box-row">
+                    <div class="product__price">
+                        <strong>34 956 P</strong>
+                        <div class="product__price-discount">
+                            <span class="old-price">44 000</span>
+                            <span class="economy">экономия 33%</span>
+                        </div>
+                        <div class="count">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                -
+                            </button>
+                            <input class="total__count" min="0" name="quantity" value="1" type="number" />
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__box-row">
+                    <div class="product__storage">
+                        <h5>НАЛИЧЕ НА СКЛАДЕ</h5>
+                        <div class="product__storage-wrapper">
+                            <div class="product__storage-item">
+                                <span class="product__storage-indicator available"></span>
+                                <div class="product__storage-info">
+                                    <p>Арсенальная</p>
+                                    <strong>в наличии</strong>
+                                </div>
+                            </div>
+                            <div class="product__storage-item">
+                                <span class="product__storage-indicator low"></span>
+                                <div class="product__storage-info">
+                                    <p>Новый свет</p>
+                                    <strong>осталось мало</strong>
+                                </div>
+                            </div>
+                            <div class="product__storage-item">
+                                <span class="product__storage-indicator notavailable"></span>
+                                <div class="product__storage-info">
+                                    <p>Промышленная</p>
+                                    <strong>нет в наличии</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="product__moreover">
+                    <h5>ДОПОЛНИТЕЛЬНО</h5>
+                    <div class="product__moreover-list">
+                        <label class="disabled custom">
+                            <input type="checkbox" name="" />
+                            <span class="checkbox-custom"></span>
+                            Подарочная упаковка: <span>+899,80 Р</span>
+                        </label>
+                        <label class="disabled custom">
+                            <input type="checkbox" name="" />
+                            <span class="checkbox-custom"></span>
+                            Подарочная упаковка: <span>+899,80 Р</span>
+                        </label>
+                        <label class="disabled custom">
+                            <input type="checkbox" name="" />
+                            <span class="checkbox-custom"></span>
+                            Подарочная упаковка: <span>+899,80 Р</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="product__buttons">
+                    <button class="btn bg-pink text-white">Купить</button>
+
+                    <button class="btn"><img src="./assets/img/wide-nav/heart.svg" alt="">В избранное</button>
+                    <button class="btn"><img src="./assets/img/wide-nav/loop.svg" alt="">Сравнить</button>
+                </div>
+            </div>
+            <a href="#" class="close-btn"><img src="./assets/img/close-button.svg" alt="" /></a>
+
+        </div>
+    </div>
+    <div class="product__overlay"></div>
+
+    <script>
+        const sizeInputs = document.querySelectorAll('.product__sizes input');
+        const sizeLabels = document.querySelectorAll('.product__sizes label');
+        sizeInputs.forEach((input) => {
+            input.addEventListener('click', function () {
+                input.parentElement.classList.toggle('check')
+                if (this.checked) {
+                    console.log(input.dataset.size);
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

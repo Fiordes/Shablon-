@@ -27,6 +27,23 @@
 
 }
 
+.load__more {
+    background: #646464;
+    border-radius: 4px;
+    padding: 11.5px 12px;
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    width: 100%;
+
+    span {
+        display: contents;
+    }
+}
+
 .more {
     font-size: 13px;
     line-height: 22px;
@@ -52,9 +69,10 @@
     &:before {
         content: '';
         display: block;
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
         background-image: url('../../assets/img/buttons/shopping-cart-green.svg');
+        background-size: cover;
         position: absolute;
         top: 50%;
         left: 5px;
@@ -110,6 +128,8 @@
         display: contents;
     }
 }
+
+
 
 
 .text-white {

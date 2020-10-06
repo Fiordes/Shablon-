@@ -127,6 +127,20 @@ body.dark {
 
     .large {
         &__preferences {
+            &-item {
+
+                background: #2F2E2E;
+
+                h6 {
+                    color: #CACACA;
+                }
+
+                p {
+                    color: #A0A0A0;
+                }
+
+            }
+
             &-describe {
                 p {
                     color: #CACACA;
@@ -135,8 +149,12 @@ body.dark {
         }
 
         .news {
+            &-title {
+                color: #cacaca;
+            }
+
             &-date {
-                color: #5f5f5f;
+                color: #cacaca;
             }
         }
     }
@@ -191,6 +209,92 @@ body.dark {
         }
     }
 
+    // CATEGORIES
+
+    .categories {
+
+
+        &__title,
+        .main__title,
+        &__sort-btn {
+            color: #f0f0f0;
+        }
+
+        &__total,
+        &__menu-item,
+        &__breadcrumbs-item {
+            a {
+                color: #f0f0f0;
+
+                &.main {
+                    color: $colour-text-pink
+                }
+            }
+        }
+
+
+
+        &__sort-wrapper {
+            border-color: #5f5f5f;
+
+
+            span {
+                color: #5f5f5f;
+                background: #2F2E2E;
+            }
+
+            select {
+                color: #cacaca;
+            }
+        }
+
+        &__filtered {
+            p {
+                color: #cacacc;
+            }
+
+            .options-brand {
+                background: #5F5F5F;
+                color: #cacacc;
+
+            }
+        }
+
+    }
+
+    button.buy {
+        border: 1.5px solid $colour-text-pink;
+        color: $colour-text-pink;
+        background: rgba(255, 255, 255, 0.1);
+
+        &:before {
+            background-image: url("../../assets/img/buttons/shopping-cart-pink.svg")
+        }
+    }
+
+
+    .result__card {
+
+        &-price,
+        &-title {
+            color: #cacaca;
+        }
+
+
+    }
+
+    .buy__card {
+        &-title {
+            color: #f0f0f0;
+        }
+
+        &-description {
+            color: #cacaca;
+        }
+
+
+    }
+
     // SEARCH RESULT BOX
     .search__result-title,
     .search__history-header,
@@ -240,6 +344,42 @@ body.dark {
         }
     }
 
+    .filter {
+
+        h3 {
+            color: #f0f0f0;
+        }
+    }
+
+
+    .filter__box-form {
+        background: #2B2A2A;
+
+        *,
+        label.disabled {
+            color: #f0f0f0;
+        }
+
+        button.reset {
+            background: #2F2E2E;
+            color: #cacaca;
+        }
+
+    }
+
+    .brands__box {
+        background: #2F2E2E;
+
+        &-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        &-link {
+            color: #f0f0f0;
+        }
+    }
+
+
 
 
 
@@ -283,5 +423,7 @@ body.dark {
             }
         }
     }
+
+
 
 }
